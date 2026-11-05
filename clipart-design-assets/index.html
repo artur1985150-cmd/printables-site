@@ -7,6 +7,7 @@
 <meta name="description" content="Ideas, sizes and how-tos: Clipart &amp; Design Assets.">
 <link rel="canonical" href="https://printables.clovermoor.com/clipart-design-assets/">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_GB">
 <meta property="og:title" content="Clipart &amp; Design Assets — Clovermoor Printables">
 <meta property="og:description" content="Ideas, sizes and how-tos: Clipart &amp; Design Assets.">
 <meta property="og:url" content="https://printables.clovermoor.com/clipart-design-assets/">
@@ -269,8 +270,19 @@ footer.site .small{color:var(--ink-2)}
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 @media print{header.site .tabs,header.site .top,.button,footer.site,.margin,.theme{display:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a{color:#000}body{background:#fff;color:#000}}
+/* language row (shown only when a second language is live): the language being read is not a link */
+.langs{display:flex;gap:2px 14px;font:600 var(--t-label)/1 var(--cat)}
+.langs a{text-decoration:none;padding:14px 2px}
+.langs a:hover{text-decoration:underline}
+.langs span[aria-current]{padding:12px 2px;border-bottom:2px solid var(--on-dept)}
+@media (max-width:719px){.top{flex-wrap:wrap}.langs{order:5;flex-basis:100%;padding-bottom:4px}}
+/* long German and Spanish words break at syllables instead of running off a phone screen */
+:lang(de) h1,:lang(de) h2,:lang(de) h3,:lang(de) .running-name,:lang(de) .entry-title,:lang(de) .tabs a,:lang(es) h1,:lang(es) h2,:lang(es) .running-name{hyphens:auto;-webkit-hyphens:auto}
+:lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+/* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
+html:not([lang=en]) .spec dd{white-space:normal}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Clipart & Design Assets"}]},{"@type":"CollectionPage","name":"Clipart & Design Assets","url":"https://printables.clovermoor.com/clipart-design-assets/","hasPart":[{"@id":"https://printables.clovermoor.com/clipart-design-assets/sublimation-tumbler-wrap-size-chart/#article"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Clipart & Design Assets"}]},{"@type":"CollectionPage","name":"Clipart & Design Assets","url":"https://printables.clovermoor.com/clipart-design-assets/","inLanguage":"en","hasPart":[{"@id":"https://printables.clovermoor.com/clipart-design-assets/sublimation-tumbler-wrap-size-chart/#article"}]}]}</script>
 </head>
 <body data-dept="9">
 <a class="skip" href="#main">Skip to content</a>
