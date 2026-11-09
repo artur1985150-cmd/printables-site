@@ -19,7 +19,7 @@
 <link rel="preload" href="/fonts/charis-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/franklin.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="c46241a076187e57">
@@ -282,6 +282,13 @@ footer.site .small{color:var(--ink-2)}
 :lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 /* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
 html:not([lang=en]) .spec dd{white-space:normal}
+/* «Add this table to your site» (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.6rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:650 var(--t-label)/1.4 var(--cat);color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Cards & Stationery","item":"https://printables.clovermoor.com/cards-stationery/"},{"@type":"ListItem","position":3,"name":"Thank You Card Wording: Examples for Every Occasion"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/cards-stationery/thank-you-card-wording/#article","headline":"Thank You Card Wording: Examples for Every Occasion","description":"Thank you card wording that works: thank them for the exact gift, say why it mattered, close warmly. Examples by occasion, short verses and card sizes.","inLanguage":"en","url":"https://printables.clovermoor.com/cards-stationery/thank-you-card-wording/","mainEntityOfPage":"https://printables.clovermoor.com/cards-stationery/thank-you-card-wording/","datePublished":"2026-11-03","dateModified":"2026-11-03","wordCount":1359,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Cards & Stationery","citation":["https://emilypost.com/advice/how-to-write-a-thank-you-note","https://emilypost.com/advice/thank-you-notes-to-send-or-not-to-send","https://emilypost.com/advice/being-thankful-thank-you-note-faqs","https://emilypost.com/advice/ten-wedding-thank-you-note-dos-and-donts","https://cardsandpockets.com/envelopes/blank-envelopes/a2-euro-flap/a2-euro-flap-white","https://pe.usps.com/text/qsg300/q201.htm"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do you write in a thank you card?","acceptedAnswer":{"@type":"Answer","text":"Thank the person for the specific gift or favour, add one sentence about why it mattered or how you will use it, optionally a line about seeing them soon, and finish with thanks or a warm closing. About four sentences is enough."}},{"@type":"Question","name":"How long should a thank you card be?","acceptedAnswer":{"@type":"Answer","text":"Short. The Emily Post Institute describes a thank-you note as about four sentences, with the third one optional."}},{"@type":"Question","name":"Do I need to send a card if I already said thank you in person?","acceptedAnswer":{"@type":"Answer","text":"For wedding and shower gifts, yes: the Emily Post Institute says to write even if you thanked the giver in person. For a small gift from a close friend or relative that is not a wedding gift, it says an email or a call is fine."}},{"@type":"Question","name":"Is it too late to send a thank you card?","acceptedAnswer":{"@type":"Answer","text":"No. The Emily Post Institute says a late note is always better than no note. Skip long apologies, say thank you, and send it."}},{"@type":"Question","name":"How do I sign a thank you card?","acceptedAnswer":{"@type":"Answer","text":"Match the closing to the relationship: 'Sincerely' or 'Best regards' for work and more formal contacts, 'Warmly' or 'With love' for friends and family. Couples sign with both names."}}]}]}</script>
 </head>
@@ -345,7 +352,55 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>Warmly, / With love, / Best regards,</td>
 </tr>
 </tbody></table>
-</div><p>Line 2 does most of the work. &quot;It&#39;s lovely&quot; could be about anything. &quot;It&#39;s already on the hook by the door&quot; could only be about that scarf.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;How to word a thank you card&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Line&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;What it does&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Fill in&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Greeting&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Matches how well you know them&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Dear Aunt Ruth, / Hi Sam,&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1. Thanks&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Names the gift or favour&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Thank you for the ___.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2. Why it mattered&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Your own thought about it&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;It&amp;#39;s perfect for ___ / It meant a lot because ___.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3. Look ahead (optional)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Links to the future&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;We can&amp;#39;t wait to ___ / See you at ___.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4. Thanks again&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Rounds it off&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Thanks again for ___.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Closing&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Same register as the greeting&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Warmly, / With love, / Best regards,&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/cards-stationery/thank-you-card-wording/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Line 2 does most of the work. &quot;It&#39;s lovely&quot; could be about anything. &quot;It&#39;s already on the hook by the door&quot; could only be about that scarf.</p>
 <h2 id="thank-you-card-wording-ideas-by-occasion">Thank you card wording ideas by occasion</h2>
 <p>These are examples we wrote. Swap the details for your own and they stop sounding like a template.</p>
 <p>For a birthday gift:</p>
@@ -458,7 +513,7 @@ Thank you, from the grown-ups and the kid.</p>
 </tbody></table>
 </div><p>Before you buy square envelopes for mailing in the US, check the US Postal Service rules. A letter must be at least 3 1/2 inches high and 5 inches long, and a square envelope counts as nonmachinable, which means a surcharge. Rectangular cards avoid that.</p>
 <p>Thank you cards sit next to other printable paper gifts in this category, such as a homemade coupon book, which works as a thank-you in its own right for someone who helped you out. A handmade bookmark slipped inside a card is another small extra; our bookmark ideas give sizes and designs. For party printables on the same theme, see our <a href="/games-puzzles/baby-shower-games-ideas/">baby shower games ideas</a>. In December, the same short-and-specific approach works for Christmas card messages.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>What do you write in a thank you card?</summary><p>Thank the person for the specific gift or favour, add one sentence about why it mattered or how you will use it, optionally a line about seeing them soon, and finish with thanks or a warm closing. About four sentences is enough.</p></details><details><summary>How long should a thank you card be?</summary><p>Short. The Emily Post Institute describes a thank-you note as about four sentences, with the third one optional.</p></details><details><summary>Do I need to send a card if I already said thank you in person?</summary><p>For wedding and shower gifts, yes: the Emily Post Institute says to write even if you thanked the giver in person. For a small gift from a close friend or relative that is not a wedding gift, it says an email or a call is fine.</p></details><details><summary>Is it too late to send a thank you card?</summary><p>No. The Emily Post Institute says a late note is always better than no note. Skip long apologies, say thank you, and send it.</p></details><details><summary>How do I sign a thank you card?</summary><p>Match the closing to the relationship: 'Sincerely' or 'Best regards' for work and more formal contacts, 'Warmly' or 'With love' for friends and family. Couples sign with both names.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://emilypost.com/advice/how-to-write-a-thank-you-note" rel="noopener">How to Write a Thank You Note</a>, The Emily Post Institute</li><li><a href="https://emilypost.com/advice/thank-you-notes-to-send-or-not-to-send" rel="noopener">Thank-You Notes: To Send or Not To Send?</a>, The Emily Post Institute</li><li><a href="https://emilypost.com/advice/being-thankful-thank-you-note-faqs" rel="noopener">Being Thankful: Thank-You Note FAQs</a>, The Emily Post Institute</li><li><a href="https://emilypost.com/advice/ten-wedding-thank-you-note-dos-and-donts" rel="noopener">10 Wedding Thank-You Note Dos and Don'ts</a>, The Emily Post Institute</li><li><a href="https://cardsandpockets.com/envelopes/blank-envelopes/a2-euro-flap/a2-euro-flap-white" rel="noopener">A2 Euro Flap Envelope, White (size and card fit)</a>, Cards &amp; Pockets</li><li><a href="https://pe.usps.com/text/qsg300/q201.htm" rel="noopener">Quick Service Guide 201: Physical Standards for Letters</a>, USPS Postal Explorer</li></ol></section>

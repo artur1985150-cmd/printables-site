@@ -19,7 +19,7 @@
 <link rel="preload" href="/fonts/charis-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/franklin.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="c46241a076187e57">
@@ -282,6 +282,13 @@ footer.site .small{color:var(--ink-2)}
 :lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 /* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
 html:not([lang=en]) .spec dd{white-space:normal}
+/* «Add this table to your site» (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.6rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:650 var(--t-label)/1.4 var(--cat);color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Wall Art & Prints","item":"https://printables.clovermoor.com/wall-art-prints/"},{"@type":"ListItem","position":3,"name":"How to Print Wall Art at Home, Staples or a Photo Lab"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/#article","headline":"How to Print Wall Art at Home, Staples or a Photo Lab","description":"How to print wall art: pick the file whose ratio matches your frame, print at Actual size on photo or matte paper, or order at Staples or a photo counter.","inLanguage":"en","url":"https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/","mainEntityOfPage":"https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/","datePublished":"2026-11-06","dateModified":"2026-11-06","wordCount":1139,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Wall Art & Prints","citation":["https://helpx.adobe.com/acrobat/desktop/print-documents/set-up-and-print-pdfs/page-size.html","https://ij.manual.canon/ij/webmanual/PrinterDriver/M/MG7100%20series/1.0/EN/PPG/dg-c_borderless.html","https://www.staples.com/services/printing/posters/?browse=1","https://www.staples.com/sbd/cre/noheader/copy-and-print/blueprints/index.html","https://photo.walgreens.com/store/prints","https://www.printful.com/create-digital-print-file","https://www.cl.cam.ac.uk/~mgk25/iso-paper.html"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I print wall art at home?","acceptedAnswer":{"@type":"Answer","text":"Open the file whose size matches your paper, choose your printer and the paper type you loaded, set the size option to Actual size (in Adobe Acrobat: Page Sizing & Handling > Size > Actual size), and print a test on plain paper before using photo or matte paper."}},{"@type":"Question","name":"How do I print wall art at Staples?","acceptedAnswer":{"@type":"Answer","text":"Use Staples' custom poster service, which lists 12x18, 16x20, 18x24, 24x36 and 36x48 in matte or gloss. Upload the file from your pack that matches one of those sizes, so nothing has to be cropped. Staples says eligible paper posters ordered by 12 pm can be picked up the same day; 36x48 is delivery only."}},{"@type":"Question","name":"Why is my print cut off at the edges?","acceptedAnswer":{"@type":"Answer","text":"Usually one of two settings. Fit or a percentage scale changed the size, or borderless printing enlarged the image past the paper's edge. Print at Actual size, turn borderless off for a test, and keep lettering away from the edges."}},{"@type":"Question","name":"What paper should I print wall art on?","acceptedAnswer":{"@type":"Answer","text":"For photos and colour art, a photo or matte photo paper that your printer maker lists in its paper-type settings, so the printer knows what it is printing on. Canon's driver advises against borderless printing on plain paper, so save borderless for photo paper."}},{"@type":"Question","name":"Can I print an 8x10 printable on letter paper?","acceptedAnswer":{"@type":"Answer","text":"Yes. US Letter is 8.5 x 11 in, so an 8x10 file fits with a margin. Print at Actual size and trim to 8x10, or leave the margin and let the mat cover it."}}]}]}</script>
 </head>
@@ -340,7 +347,50 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>1.27</td>
 </tr>
 </tbody></table>
-</div><p>Check the frame, not just its name. A frame with a mat holds a smaller print than its label: an IKEA 30x40 cm frame takes an A4-size print with its mount. Our <a href="/wall-art-prints/wall-art-sizes/">wall art sizes</a> chart has every size in inches and centimetres, the pixels each one needs and how mats work.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Step one: pick the right file from the pack&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;If your frame or print size is&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Use the file for&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Ratio&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4x5, 8x10, 16x20, 40x50 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4:5&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;6x8, 12x16, 18x24, 30x40 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3:4&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4x6, 12x18, 20x30, 24x36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2:3&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A5, A4, A3, A2, A1&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;ISO&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.414&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11x14&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11x14&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Check the frame, not just its name. A frame with a mat holds a smaller print than its label: an IKEA 30x40 cm frame takes an A4-size print with its mount. Our <a href="/wall-art-prints/wall-art-sizes/">wall art sizes</a> chart has every size in inches and centimetres, the pixels each one needs and how mats work.</p>
 <h2 id="how-to-print-wall-art-at-home">How to print wall art at home</h2>
 <p>A home printer handles anything up to the largest paper it takes; check the manual for yours. A printer that takes US Letter (8.5 x 11 in) or A4 (210 x 297 mm) covers 4x6, 5x7, 8x10 and A4 prints.</p>
 <ol>
@@ -383,7 +433,7 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <li>At a shop: the preview shows the whole design with nothing cut.</li>
 </ul>
 <p>Once it is printed and framed, our gallery wall ideas show how to hang several prints together, with spacing and height. More printed decor is in the <a href="/wall-art-prints/">wall art and prints</a> section.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>How do I print wall art at home?</summary><p>Open the file whose size matches your paper, choose your printer and the paper type you loaded, set the size option to Actual size (in Adobe Acrobat: Page Sizing &amp; Handling &gt; Size &gt; Actual size), and print a test on plain paper before using photo or matte paper.</p></details><details><summary>How do I print wall art at Staples?</summary><p>Use Staples' custom poster service, which lists 12x18, 16x20, 18x24, 24x36 and 36x48 in matte or gloss. Upload the file from your pack that matches one of those sizes, so nothing has to be cropped. Staples says eligible paper posters ordered by 12 pm can be picked up the same day; 36x48 is delivery only.</p></details><details><summary>Why is my print cut off at the edges?</summary><p>Usually one of two settings. Fit or a percentage scale changed the size, or borderless printing enlarged the image past the paper's edge. Print at Actual size, turn borderless off for a test, and keep lettering away from the edges.</p></details><details><summary>What paper should I print wall art on?</summary><p>For photos and colour art, a photo or matte photo paper that your printer maker lists in its paper-type settings, so the printer knows what it is printing on. Canon's driver advises against borderless printing on plain paper, so save borderless for photo paper.</p></details><details><summary>Can I print an 8x10 printable on letter paper?</summary><p>Yes. US Letter is 8.5 x 11 in, so an 8x10 file fits with a margin. Print at Actual size and trim to 8x10, or leave the margin and let the mat cover it.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://helpx.adobe.com/acrobat/desktop/print-documents/set-up-and-print-pdfs/page-size.html" rel="noopener">Adjust page size for printing PDFs in Acrobat</a>, Adobe Help</li><li><a href="https://ij.manual.canon/ij/webmanual/PrinterDriver/M/MG7100%20series/1.0/EN/PPG/dg-c_borderless.html" rel="noopener">Borderless Printing (MG7100 series printer driver guide)</a>, Canon</li><li><a href="https://www.staples.com/services/printing/posters/?browse=1" rel="noopener">Custom Posters (sizes, paper, same-day pickup)</a>, Staples</li><li><a href="https://www.staples.com/sbd/cre/noheader/copy-and-print/blueprints/index.html" rel="noopener">Blueprints (engineering print sizes)</a>, Staples</li><li><a href="https://photo.walgreens.com/store/prints" rel="noopener">Prints &amp; Enlargements and Posters (sizes)</a>, Walgreens Photo</li><li><a href="https://www.printful.com/create-digital-print-file" rel="noopener">Create the perfect wall art print file</a>, Printful</li><li><a href="https://www.cl.cam.ac.uk/~mgk25/iso-paper.html" rel="noopener">International standard paper sizes (ISO 216)</a>, Markus Kuhn, University of Cambridge Computer Laboratory</li></ol></section>

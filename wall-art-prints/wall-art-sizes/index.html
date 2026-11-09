@@ -19,7 +19,7 @@
 <link rel="preload" href="/fonts/charis-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/franklin.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="c46241a076187e57">
@@ -282,6 +282,13 @@ footer.site .small{color:var(--ink-2)}
 :lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 /* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
 html:not([lang=en]) .spec dd{white-space:normal}
+/* «Add this table to your site» (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.6rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:650 var(--t-label)/1.4 var(--cat);color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Wall Art & Prints","item":"https://printables.clovermoor.com/wall-art-prints/"},{"@type":"ListItem","position":3,"name":"Wall Art Sizes: Chart of Ratios, Frames and Pixels"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/#article","headline":"Wall Art Sizes: Chart of Ratios, Frames and Pixels","description":"Standard wall art sizes grouped by ratio: 2:3 (4x6 to 24x36), 3:4 (12x16, 18x24), 4:5 (8x10, 16x20), ISO A4 to A1, with frames and print pixels.","inLanguage":"en","url":"https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/","mainEntityOfPage":"https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/","datePublished":"2026-11-03","dateModified":"2026-11-03","wordCount":1284,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Wall Art & Prints","citation":["https://www.cl.cam.ac.uk/~mgk25/iso-paper.html","https://www.ikea.com/ph/en/rooms/living-room/how-to/find-the-right-picture-frame-pubb930a400/","https://www.ikea.com/gb/en/p/roedalm-frame-black-20548918/","https://www.printful.com/create-digital-print-file","https://photo.walgreens.com/store/prints","https://www.staples.com/services/printing/posters/?browse=1"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are the standard wall art sizes?","acceptedAnswer":{"@type":"Answer","text":"In inches: 5x7, 8x10, 11x14, 12x16, 16x20, 18x24 and 24x36 are the usual frame and poster sizes. In centimetres and ISO sizes: A4 (21 x 29.7 cm), A3, 30x40, 40x50, 50x70 and A1. Walgreens prints posters at 11x14, 16x20, 20x30 and 24x36; Staples at 12x18, 16x20, 18x24, 24x36 and 36x48."}},{"@type":"Question","name":"What size should printable wall art be?","acceptedAnswer":{"@type":"Answer","text":"Big enough in pixels for the largest print in its shape family at about 300 pixels per inch. A 2:3 file of 7200 x 10800 pixels prints sharp at 24x36 and scales down to 20x30, 12x18 and 4x6. A 4:5 file of 4800 x 6000 covers 16x20, 8x10 and 4x5."}},{"@type":"Question","name":"Which ratio fits the most frame sizes?","acceptedAnswer":{"@type":"Answer","text":"There is no single one. 4:5 covers 4x5, 8x10, 16x20 and 40x50 cm; 3:4 covers 6x8, 12x16, 18x24 and 30x40 cm; 2:3 covers 4x6, 12x18, 20x30 and 24x36. The ISO ratio covers A5 to A1. 11x14 and US Letter are each their own shape."}},{"@type":"Question","name":"Is A4 the same as 8.5 x 11?","acceptedAnswer":{"@type":"Answer","text":"No. A4 is 210 x 297 mm (8.27 x 11.69 in); US Letter is 8.5 x 11 in (216 x 279 mm). A4 is a little narrower and noticeably taller, and the shapes differ, so a file made for one leaves a strip or gets cropped on the other."}},{"@type":"Question","name":"What size frame do I need for an 8x10 print?","acceptedAnswer":{"@type":"Answer","text":"An 8x10 frame without a mat, or a larger frame with a mat cut for 8x10. The mat opening is a little smaller than the print so it overlaps the edges: IKEA's 30x40 cm RÖDALM mount, for example, has a 20 x 29 cm opening for a 21 x 30 cm picture."}}]}]}</script>
 </head>
@@ -345,7 +352,55 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>none</td>
 </tr>
 </tbody></table>
-</div><p>The ISO numbers come from ISO 216: A4 is 210 x 297 mm, A3 297 x 420, A2 420 x 594, A1 594 x 841, and the height divided by the width of every A size is the square root of two, about 1.414. That is why an A4 file scales to A3 or A2 without a crop. US Letter (216 x 279 mm) is a different shape, and so is 11x17.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Wall art sizes chart by ratio&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Ratio&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Inch sizes&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Metric sizes&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2:3 (1.5)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4x6, 8x12, 12x18, 16x24, 20x30, 24x36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;10x15 cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3:4 (1.33)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;6x8, 9x12, 12x16, 18x24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30x40 cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4:5 (1.25)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4x5, 8x10, 16x20&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40x50 cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;ISO A (1.414)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;close to 5x7 (1.4)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A5, A4, A3, A2, A1; 50x70 cm (1.4)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11x14 (1.27)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11x14 only&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;none&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;US Letter (1.29)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8.5x11&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;none&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>The ISO numbers come from ISO 216: A4 is 210 x 297 mm, A3 297 x 420, A2 420 x 594, A1 594 x 841, and the height divided by the width of every A size is the square root of two, about 1.414. That is why an A4 file scales to A3 or A2 without a crop. US Letter (216 x 279 mm) is a different shape, and so is 11x17.</p>
 <h2 id="standard-wall-art-sizes-in-inches-and-centimetres">Standard wall art sizes in inches and centimetres</h2>
 <p>The same chart sorted by size, with conversions (1 inch = 2.54 cm):</p>
 <div class="table-wrap"><table>
@@ -460,7 +515,128 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>1.5</td>
 </tr>
 </tbody></table>
-</div><p>Some near-twins are easy to mix up. 30x40 cm and 12x16 in are the same shape but not the same size; a 12x16 print (30.5 x 40.6 cm) is about half a centimetre too large for a frame made for 30x40 cm. A3 and 12x16 differ by more than a centimetre on the long side.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t2">HTML code</label>
+<textarea id="embed-t2" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Standard wall art sizes in inches and centimetres&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Size&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Inches&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Centimetres&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Ratio&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5x7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5 x 7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12.7 x 17.8&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A4&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8.27 x 11.69&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;21 x 29.7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.414&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8x10&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8 x 10&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;20.3 x 25.4&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Letter&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8.5 x 11&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;21.6 x 27.9&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.29&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11x14&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11 x 14&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;27.9 x 35.6&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.27&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30x40 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11.8 x 15.7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 x 40&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12x16&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12 x 16&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30.5 x 40.6&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A3&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11.69 x 16.54&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;29.7 x 42&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.414&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12x18&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12 x 18&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30.5 x 45.7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;16x20&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;16 x 20&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40.6 x 50.8&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40x50 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;15.7 x 19.7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40 x 50&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.25&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;18x24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;18 x 24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;45.7 x 61&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.33&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A2&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;16.54 x 23.39&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;42 x 59.4&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.414&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50x70 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;19.7 x 27.6&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50 x 70&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.4&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;20x30&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;20 x 30&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50.8 x 76.2&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A1&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;23.39 x 33.11&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;59.4 x 84.1&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.414&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;24x36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;24 x 36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;61 x 91.4&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1.5&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t2" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Some near-twins are easy to mix up. 30x40 cm and 12x16 in are the same shape but not the same size; a 12x16 print (30.5 x 40.6 cm) is about half a centimetre too large for a frame made for 30x40 cm. A3 and 12x16 differ by more than a centimetre on the long side.</p>
 <h2 id="what-size-should-printable-wall-art-be-pixels-per-size">What size should printable wall art be? Pixels per size</h2>
 <p>A printable file has no size in inches, only pixels. How large it prints well depends on how many pixels land on each inch. Printful, which prints posters to order, strongly recommends files at 300 DPI. Multiply each side in inches by 300:</p>
 <div class="table-wrap"><table>
@@ -519,7 +695,72 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>7200 x 10800</td>
 </tr>
 </tbody></table>
-</div><p>So a printable sold as &quot;one file for 2:3 sizes&quot; should be at least 7200 x 10800 pixels if it promises 24x36. Printful&#39;s minimum for paper products is much lower, 75 DPI, so a smaller file still prints; it is the 300 figure that keeps it sharp. Printful also asks for files in the sRGB colour profile (sRGB IEC61966-2.1) and converts them to CMYK for printing.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t3">HTML code</label>
+<textarea id="embed-t3" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;What size should printable wall art be? Pixels per size&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Print size&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Pixels at 300 per inch&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4x6&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1200 x 1800&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5x7&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1500 x 2100&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8x10&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2400 x 3000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A4&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2480 x 3508&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;11x14&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3300 x 4200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12x16&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3600 x 4800&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A3&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3508 x 4961&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;12x18&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3600 x 5400&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;16x20&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4800 x 6000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;18x24&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5400 x 7200&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;A2&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4961 x 7016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;24x36&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;7200 x 10800&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t3" data-done="Copied" hidden>Copy code</button></p>
+</details><p>So a printable sold as &quot;one file for 2:3 sizes&quot; should be at least 7200 x 10800 pixels if it promises 24x36. Printful&#39;s minimum for paper products is much lower, 75 DPI, so a smaller file still prints; it is the 300 figure that keeps it sharp. Printful also asks for files in the sRGB colour profile (sRGB IEC61966-2.1) and converts them to CMYK for printing.</p>
 <h2 id="frame-sizes-why-an-8x10-frame-can-hold-a-5x7">Frame sizes: why an 8x10 frame can hold a 5x7</h2>
 <p>A frame is named after its inside size, the space the picture or the mat fills. IKEA&#39;s frame guide says it plainly: its frame sizes refer to the inner dimensions. Add a mat (IKEA calls it a mount) and the frame holds a smaller picture:</p>
 <div class="table-wrap"><table>
@@ -554,7 +795,48 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>50 x 70 cm</td>
 </tr>
 </tbody></table>
-</div><p>The mat&#39;s window is cut slightly smaller than the picture so it overlaps the edges and holds the print in place. IKEA&#39;s 30x40 cm RÖDALM lists a mount opening of 20 x 29 cm for a 21 x 30 cm picture: half a centimetre hidden on every side. Leave that margin free of signatures and lettering.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t4">HTML code</label>
+<textarea id="embed-t4" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Frame sizes: why an 8x10 frame can hold a 5x7&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;IKEA frame&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Picture with the mount&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;13 x 18 cm (5x7)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;10 x 15 cm (4x6)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;21 x 30 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;13 x 18 cm (5x7)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 x 40 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;21 x 30 cm (A4)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40 x 50 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;30 x 40 cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50 x 70 cm&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;40 x 50 cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;61 x 91 cm (24x36)&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;50 x 70 cm&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t4" data-done="Copied" hidden>Copy code</button></p>
+</details><p>The mat&#39;s window is cut slightly smaller than the picture so it overlaps the edges and holds the print in place. IKEA&#39;s 30x40 cm RÖDALM lists a mount opening of 20 x 29 cm for a 21 x 30 cm picture: half a centimetre hidden on every side. Leave that margin free of signatures and lettering.</p>
 <p>When you buy a frame, check two numbers: the picture size with the mat, and the picture size without it. Then print the file in the matching size from the tables above.</p>
 <h2 id="wall-art-print-sizes-at-print-counters">Wall art print sizes at print counters</h2>
 <p>Most of these sizes can be printed without a specialist lab. Walgreens Photo lists prints and enlargements at 4x4, 4x6, 5x7, 6x8, 8x8 and 8x10, and posters at 11x14, 16x20, 20x30 and 24x36. Staples lists custom posters at 12x18, 16x20, 18x24, 24x36 and 36x48, on matte or gloss paper.</p>
@@ -576,7 +858,7 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <li>Count the frame and mat in the size. A 30x40 cm frame showing an A4 print takes 32 x 42 cm of wall in IKEA&#39;s RÖDALM.</li>
 </ol>
 <p>For several pieces together, our gallery wall ideas give layouts with exact frame sizes, spacing and hanging height. For mirrors, shelves, textiles and other things to hang next to prints, see our wall decor ideas. Everything else on printed decor is in the <a href="/wall-art-prints/">wall art and prints</a> section. If you are sizing a picture for a screen rather than a wall, the logic is the same but the numbers are pixels on glass: see <a href="/phone-screen-backgrounds/phone-wallpaper-size/">phone wallpaper size</a>.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>What are the standard wall art sizes?</summary><p>In inches: 5x7, 8x10, 11x14, 12x16, 16x20, 18x24 and 24x36 are the usual frame and poster sizes. In centimetres and ISO sizes: A4 (21 x 29.7 cm), A3, 30x40, 40x50, 50x70 and A1. Walgreens prints posters at 11x14, 16x20, 20x30 and 24x36; Staples at 12x18, 16x20, 18x24, 24x36 and 36x48.</p></details><details><summary>What size should printable wall art be?</summary><p>Big enough in pixels for the largest print in its shape family at about 300 pixels per inch. A 2:3 file of 7200 x 10800 pixels prints sharp at 24x36 and scales down to 20x30, 12x18 and 4x6. A 4:5 file of 4800 x 6000 covers 16x20, 8x10 and 4x5.</p></details><details><summary>Which ratio fits the most frame sizes?</summary><p>There is no single one. 4:5 covers 4x5, 8x10, 16x20 and 40x50 cm; 3:4 covers 6x8, 12x16, 18x24 and 30x40 cm; 2:3 covers 4x6, 12x18, 20x30 and 24x36. The ISO ratio covers A5 to A1. 11x14 and US Letter are each their own shape.</p></details><details><summary>Is A4 the same as 8.5 x 11?</summary><p>No. A4 is 210 x 297 mm (8.27 x 11.69 in); US Letter is 8.5 x 11 in (216 x 279 mm). A4 is a little narrower and noticeably taller, and the shapes differ, so a file made for one leaves a strip or gets cropped on the other.</p></details><details><summary>What size frame do I need for an 8x10 print?</summary><p>An 8x10 frame without a mat, or a larger frame with a mat cut for 8x10. The mat opening is a little smaller than the print so it overlaps the edges: IKEA's 30x40 cm RÖDALM mount, for example, has a 20 x 29 cm opening for a 21 x 30 cm picture.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://www.cl.cam.ac.uk/~mgk25/iso-paper.html" rel="noopener">International standard paper sizes (ISO 216)</a>, Markus Kuhn, University of Cambridge Computer Laboratory</li><li><a href="https://www.ikea.com/ph/en/rooms/living-room/how-to/find-the-right-picture-frame-pubb930a400/" rel="noopener">Picture Frame Size Guide</a>, IKEA</li><li><a href="https://www.ikea.com/gb/en/p/roedalm-frame-black-20548918/" rel="noopener">RÖDALM frame, black, 30x40 cm (product measurements)</a>, IKEA UK</li><li><a href="https://www.printful.com/create-digital-print-file" rel="noopener">Create the perfect wall art print file</a>, Printful</li><li><a href="https://photo.walgreens.com/store/prints" rel="noopener">Prints &amp; Enlargements and Posters (sizes)</a>, Walgreens Photo</li><li><a href="https://www.staples.com/services/printing/posters/?browse=1" rel="noopener">Custom Posters (sizes and paper)</a>, Staples</li></ol></section>

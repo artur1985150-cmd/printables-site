@@ -19,7 +19,7 @@
 <link rel="preload" href="/fonts/charis-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/franklin.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
-<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
 <meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
 <meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
 <meta name="yandex-verification" content="c46241a076187e57">
@@ -282,6 +282,13 @@ footer.site .small{color:var(--ink-2)}
 :lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
 /* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
 html:not([lang=en]) .spec dd{white-space:normal}
+/* «Add this table to your site» (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.6rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:650 var(--t-label)/1.4 var(--cat);color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Games & Puzzles","item":"https://printables.clovermoor.com/games-puzzles/"},{"@type":"ListItem","position":3,"name":"Christmas Party Games for Family, Adults and Work"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/games-puzzles/christmas-party-games/#article","headline":"Christmas Party Games for Family, Adults and Work","description":"Christmas party games by crowd: pass the parcel and Pin the Nose on Rudolph for families, charades and trivia for adults, low-key printables for the office.","inLanguage":"en","url":"https://printables.clovermoor.com/games-puzzles/christmas-party-games/","mainEntityOfPage":"https://printables.clovermoor.com/games-puzzles/christmas-party-games/","datePublished":"2026-11-02","dateModified":"2026-11-02","wordCount":1087,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Games & Puzzles","citation":["https://www.paperlesspost.com/blog/fun-christmas-party-games/","https://www.playpartyplan.com/25-christmas-party-games/","https://www.shutterfly.com/ideas/christmas-party-games/","https://melissajanelee.com/christmas-party-games-for-adults/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are good Christmas party games for a big group?","acceptedAnswer":{"@type":"Answer","text":"Paper games everyone plays at once: Christmas bingo, music bingo, trivia sheets, holiday word scrambles and a find-the-guest card. Team games such as charades or the human Christmas tree also scale, since you only add more teams. Print one sheet and pen per guest."}},{"@type":"Question","name":"What Christmas party games work at the office?","acceptedAnswer":{"@type":"Answer","text":"Games people can play from their seat without drinking or performing: Christmas trivia in teams, emoji pictionary, a Christmas taboo round, bingo and a gift swap with a clear price limit. Keep teams mixed across departments and let anyone sit out a round."}},{"@type":"Question","name":"What are fun Christmas games for adults?","acceptedAnswer":{"@type":"Answer","text":"Christmas trivia, name that tune, who am I with sticky notes, two truths and a lie, Christmas charades with film titles, and a white elephant gift swap. They need little setup and get people talking."}},{"@type":"Question","name":"What Christmas games need no supplies?","acceptedAnswer":{"@type":"Answer","text":"Charades, twenty questions, two truths and a lie, holiday A to Z, and the word ban game, where saying a banned word like 'Christmas' costs you a token. All of them work with just players and a timer on a phone."}}]}]}</script>
 </head>
@@ -424,7 +431,80 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <td>Yes</td>
 </tr>
 </tbody></table>
-</div><p>Shutterfly lists a minimum player count for each game on its page, which helps if your group is very small. For six to ten people, Play Party Plan suggests game-show style games such as Christmas Family Feud and Christmas Price is Right.</p>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;Games by group size and prep&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Game&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Best group size&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Prep needed&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Works at work&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Charades&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any, in teams&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;None&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Two truths and a lie&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Small&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;None&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Christmas trivia&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any, in teams&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Write or print questions&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Christmas bingo&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Large&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Print one card per guest&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Emoji pictionary&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Print or show on a screen&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Pass the parcel&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Small circle&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Wrap many layers the day before&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Scavenger hunt&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Teams of 2 or 3&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Hide items before guests arrive&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sometimes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;White elephant&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Small to medium&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Each guest brings a gift&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes, with a price limit&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Pin the Nose on Rudolph&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Any, one at a time&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Print a poster&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/games-puzzles/christmas-party-games/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>Shutterfly lists a minimum player count for each game on its page, which helps if your group is very small. For six to ten people, Play Party Plan suggests game-show style games such as Christmas Family Feud and Christmas Price is Right.</p>
 <h2 id="christmas-games-that-need-no-supplies">Christmas games that need no supplies</h2>
 <p>When the printer is out of ink or the party is spontaneous:</p>
 <ul>
@@ -435,7 +515,7 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <li>Who am I, using sticky notes if you have them, or just guessing aloud.</li>
 </ul>
 <p>If you are planning the whole season, our Thanksgiving games cover the table a month earlier, and the <a href="/games-puzzles/">Games &amp; Puzzles</a> section has more, starting with our <a href="/games-puzzles/baby-shower-games-ideas/">baby shower games ideas</a> sorted by group size.</p>
-</div></div></div>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
 
 <section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>What are good Christmas party games for a big group?</summary><p>Paper games everyone plays at once: Christmas bingo, music bingo, trivia sheets, holiday word scrambles and a find-the-guest card. Team games such as charades or the human Christmas tree also scale, since you only add more teams. Print one sheet and pen per guest.</p></details><details><summary>What Christmas party games work at the office?</summary><p>Games people can play from their seat without drinking or performing: Christmas trivia in teams, emoji pictionary, a Christmas taboo round, bingo and a gift swap with a clear price limit. Keep teams mixed across departments and let anyone sit out a round.</p></details><details><summary>What are fun Christmas games for adults?</summary><p>Christmas trivia, name that tune, who am I with sticky notes, two truths and a lie, Christmas charades with film titles, and a white elephant gift swap. They need little setup and get people talking.</p></details><details><summary>What Christmas games need no supplies?</summary><p>Charades, twenty questions, two truths and a lie, holiday A to Z, and the word ban game, where saying a banned word like 'Christmas' costs you a token. All of them work with just players and a timer on a phone.</p></details></section>
 <section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://www.paperlesspost.com/blog/fun-christmas-party-games/" rel="noopener">11 Fun Christmas Party Games Folks From One to 92 Will Love</a>, Paperless Post</li><li><a href="https://www.playpartyplan.com/25-christmas-party-games/" rel="noopener">Christmas Party Games</a>, Play Party Plan</li><li><a href="https://www.shutterfly.com/ideas/christmas-party-games/" rel="noopener">Top 40 Christmas Party Games Everyone Will Love</a>, Shutterfly</li><li><a href="https://melissajanelee.com/christmas-party-games-for-adults/" rel="noopener">21 Christmas Party Games for Adults</a>, Melissa Jane Lee</li></ol></section>
