@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A4 Size in Pixels: 72, 150 and 300 DPI Chart</title>
+<meta name="description" content="A4 is 2480 x 3508 pixels at 300 dpi, 1240 x 1754 at 150 and 595 x 842 at 72. Chart for A5, A3, Letter and photo sizes, plus a pixels-to-print calculator.">
+<link rel="canonical" href="https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="A4 Size in Pixels: 72, 150 and 300 DPI Chart">
+<meta property="og:description" content="A4 is 2480 x 3508 pixels at 300 dpi, 1240 x 1754 at 150 and 595 x 842 at 72. Chart for A5, A3, Letter and photo sizes, plus a pixels-to-print calculator.">
+<meta property="og:url" content="https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/">
+<meta property="og:site_name" content="Clovermoor Printables">
+
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="Clovermoor Printables" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/charis-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/franklin.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
+<meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
+<meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
+<meta name="yandex-verification" content="c46241a076187e57">
+<meta name="p:domain_verify" content="16ff5edbd4738a43bf460ee40d3b109b">
+<style>/* Clovermoor Printables — the reference pages of a mail-order craft and party
+   supply catalogue. Coated white stock, one black ink for every word and rule,
+   and one flood spot ink per department: the running-head band, the pulled tab,
+   the head of a spec chart. Day and night share the inks; only the stock changes.
+   Fonts: Libre Franklin (catalogue gothic) and Charis SIL (Charter, drawn for
+   laser printers). Decisions and their sources: DESIGN.md. */
+@font-face{font-family:"Charis SIL";src:url(/fonts/charis-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Charis SIL";src:url(/fonts/charis-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Charis SIL";src:url(/fonts/charis-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Libre Franklin";src:url(/fonts/franklin.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+
+:root{
+  /* stock and the one ink */
+  --stock:#f6f7f8;--sheet-white:#fff;--ink:#141619;--ink-2:#4a4f57;--rule:#c8ccd1;--rule-strong:#141619;
+  /* highlighter for selection: the catalogue reader's marker */
+  --marker:#ffe14d;--marker-ink:#141619;
+  --on-dept:#fff;
+  --read:"Charis SIL",Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+  --cat:"Libre Franklin","Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic","Arial Narrow",system-ui,sans-serif;
+  /* the fixed five-step ramp: running head, title, section, sub, body (+ label) */
+  --t-run:clamp(2.25rem,1.1rem + 5.2vw,5rem);
+  --t-title:clamp(1.75rem,1.2rem + 2.4vw,2.875rem);
+  --t-sec:1.5rem;--t-sub:1.1875rem;--t-body:1.0625rem;--t-label:.875rem;
+  --measure:38rem;--page:76rem;--gap:clamp(16px,4vw,40px);
+  color-scheme:light dark;
+}
+/* Ten spot inks, one per department, by its place in the Etsy list (build.mjs → deptOf).
+   Each ink: the ink itself (white type on it 5.8:1 or better; link colour on white),
+   -lite (night links, 42% ink in white), -deep and -deep2 (tabs, hover: 22% / 38% black),
+   -tint (day spec-chart rows, 7% ink in white), -tint-n (night rows, 22% ink in #1b1e22).
+   Written out as plain hex, not color-mix(): the contrast check reads computed colours.
+   The house ink (home, about, 404) is clover green on :root. */
+:root{--dept:#0b6b3a;--dept-lite:#99c1ac;--dept-deep:#09532d;--dept-deep2:#074224;--tint-d:#eef5f1;--tint-n:#172f27}
+[data-dept="1"]{--dept:#2b3fb4;--dept-lite:#a6aee0;--dept-deep:#22318c;--dept-deep2:#1b2770;--tint-d:#f0f2fa;--tint-n:#1f2542} /* ultramarine */
+[data-dept="2"]{--dept:#ad1767;--dept-lite:#dd9ebf;--dept-deep:#871250;--dept-deep2:#6b0e40;--tint-d:#f9eff4;--tint-n:#3b1c31} /* magenta */
+[data-dept="3"]{--dept:#00707a;--dept-lite:#94c3c7;--dept-deep:#00575f;--dept-deep2:#00454c;--tint-d:#edf5f6;--tint-n:#153035} /* peacock */
+[data-dept="4"]{--dept:#6331ad;--dept-lite:#bda8dd;--dept-deep:#4d2687;--dept-deep2:#3d1e6b;--tint-d:#f4f1f9;--tint-n:#2b2241} /* violet */
+[data-dept="5"]{--dept:#bb1630;--dept-lite:#e29da8;--dept-deep:#921125;--dept-deep2:#740e1e;--tint-d:#faeff1;--tint-n:#3e1c25} /* scarlet */
+[data-dept="6"]{--dept:#1f3d72;--dept-lite:#a1aec4;--dept-deep:#183059;--dept-deep2:#132647;--tint-d:#eff1f5;--tint-n:#1c2534} /* navy */
+[data-dept="7"]{--dept:#4c6812;--dept-lite:#b4c09b;--dept-deep:#3b510e;--dept-deep2:#2f400b;--tint-d:#f2f4ee;--tint-n:#262e1e} /* olive */
+[data-dept="8"]{--dept:#45505e;--dept-lite:#b1b6bb;--dept-deep:#363e49;--dept-deep2:#2b323a;--tint-d:#f2f3f4;--tint-n:#24292f} /* slate */
+[data-dept="9"]{--dept:#7a2a6e;--dept-lite:#c7a6c2;--dept-deep:#5f2156;--dept-deep2:#4c1a44;--tint-d:#f6f0f5;--tint-n:#302133} /* plum */
+[data-dept="10"]{--dept:#006690;--dept-lite:#94bfd0;--dept-deep:#005070;--dept-deep2:#003f59;--tint-d:#edf4f7;--tint-n:#152e3a} /* deep cyan */
+
+/* What text and rows use, resolved where the ink is set. */
+body,[data-dept]{--dept-text:var(--dept);--dept-tint:var(--tint-d)}
+
+/* Night: the same inks on a dark stock; links take the light tint of the ink. */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;
+  --stock:#131518;--sheet-white:#1b1e22;--ink:#eceef1;--ink-2:#b7bcc4;--rule:#3a3f47;--rule-strong:#d9dce0;
+}
+:root:not([data-theme=light]) [data-dept],:root:not([data-theme=light]) body{--dept-text:var(--dept-lite);--dept-tint:var(--tint-n)}}
+:root[data-theme=dark]{color-scheme:dark;
+  --stock:#131518;--sheet-white:#1b1e22;--ink:#eceef1;--ink-2:#b7bcc4;--rule:#3a3f47;--rule-strong:#d9dce0;
+}
+:root[data-theme=dark] [data-dept],:root[data-theme=dark] body{--dept-text:var(--dept-lite);--dept-tint:var(--tint-n)}
+:root[data-theme=light]{color-scheme:light}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--ink-2) var(--stock);accent-color:var(--dept);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;background:var(--stock);color:var(--ink);font:400 var(--t-body)/1.62 var(--read);overflow-wrap:break-word;caret-color:var(--dept-text)}
+::selection{background:var(--marker);color:var(--marker-ink)}
+/* links: black ink, underlined in the department ink (colour only floods or marks, never sets running text) */
+a{color:var(--ink);text-decoration-color:var(--dept-text);text-decoration-thickness:2px;text-underline-offset:.2em}
+a:hover{color:var(--dept-text);text-decoration-thickness:3px}
+:focus-visible{outline:3px solid var(--marker);outline-offset:2px;box-shadow:0 0 0 5px var(--ink)}
+img{max-width:100%;height:auto;display:block}
+picture{display:block;min-width:0}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--marker);color:var(--marker-ink);padding:8px 12px;z-index:9}
+
+/* ---------- the running-head band ---------- */
+header.site{background:var(--dept);color:var(--on-dept)}
+.band{max-width:var(--page);margin:0 auto;padding:0 var(--gap)}
+header.site a{color:var(--on-dept)}
+.top{display:flex;align-items:center;gap:8px 20px;min-height:52px;border-bottom:1px solid color-mix(in srgb,var(--on-dept) 35%,var(--dept))}
+.brand{font:800 1rem/1.1 var(--cat);letter-spacing:-.005em;text-decoration:none;margin-right:auto;padding:12px 0}
+.about{font:600 var(--t-label)/1 var(--cat);text-decoration:none;padding:14px 4px}
+.about:hover,.brand:hover{text-decoration:underline}
+.running{padding:clamp(18px,3vw,34px) 0 clamp(20px,3vw,30px)}
+.running h1,.running-name{margin:0;font:850 var(--t-run)/.94 var(--cat);letter-spacing:-.03em;text-wrap:balance;max-width:16ch;color:var(--on-dept)}
+.running-name{font-size:clamp(2.75rem,1.6rem + 4vw,4.25rem);max-width:none}
+.running-name a{text-decoration:none}
+.running-name a:hover{text-decoration:underline;text-decoration-thickness:3px}
+.running .lead{margin:.75em 0 0;max-width:36rem;font:500 1.125rem/1.45 var(--cat);color:var(--on-dept)}
+
+/* department tabs hang from the band; the current one is pulled out in stock */
+.tabs{margin:0}
+.tabs-row,.tabs-list{display:flex;flex-wrap:wrap;gap:4px}
+.tabs a,.tabs summary{display:flex;align-items:center;min-height:44px;padding:0 12px;font:650 .875rem/1.15 var(--cat);text-decoration:none;color:var(--on-dept);background:var(--dept-deep);border-radius:6px 6px 0 0;transition:transform .16s cubic-bezier(.2,.8,.2,1),background-color .16s}
+.tabs a:hover,.tabs summary:hover{background:var(--dept-deep2)}
+.tabs a[aria-current]{background:var(--stock);color:var(--dept-text);font-weight:800}
+.tabs-row{display:none}
+.tabs summary{list-style:none;cursor:pointer;gap:8px;width:max-content}
+.tabs summary::-webkit-details-marker{display:none}
+.tabs summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+.tabs details[open] summary{border-radius:6px 6px 0 0;background:var(--dept-deep2)}
+.tabs details[open] summary::after{transform:translateY(2px) rotate(225deg)}
+.tabs .count{font-weight:500;font-variant-numeric:tabular-nums}
+.tabs-list{padding:8px 0 0;border-top:4px solid var(--dept-deep2)}
+@media (min-width:900px){
+  .tabs-row{display:flex}.tabs-phone{display:none}
+  .tabs a{padding:0 14px;font-size:.9375rem}
+  .tabs a:not([aria-current]):hover{transform:translateY(-3px)}
+}
+
+/* the day / night switch: two words, the current one inked in the band */
+.theme{display:inline-flex;align-items:stretch;min-height:44px;padding:4px;margin:0 -4px 0 0;gap:2px;background:none;border:1px solid color-mix(in srgb,var(--on-dept) 55%,var(--dept));border-radius:6px;cursor:pointer;font:650 .8125rem/1 var(--cat);color:var(--on-dept)}
+.theme span{display:flex;align-items:center;padding:0 9px;border-radius:3px}
+.theme[aria-pressed=false] .theme-day,.theme[aria-pressed=true] .theme-night{background:var(--on-dept);color:var(--dept)}
+.theme:hover{border-color:var(--on-dept)}
+
+.crumbs{max-width:var(--page);margin:0 auto;padding:18px var(--gap) 0;font:500 var(--t-label)/1.4 var(--cat);color:var(--ink-2)}
+.crumbs a{color:var(--ink-2)}
+.crumbs [aria-current]{color:var(--ink)}
+
+main{padding:0 0 72px}
+.sheet{max-width:var(--page);margin:0 auto;padding:0 var(--gap)}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--cat);color:var(--ink);text-wrap:balance}
+h1{font-size:var(--t-title);line-height:1.06;font-weight:820;letter-spacing:-.022em;margin:.5em 0 .5em;max-width:22ch}
+h2{max-width:var(--measure);font-size:var(--t-sec);line-height:1.2;font-weight:780;letter-spacing:-.012em;margin:2.2em 0 .5em;padding-top:.55em;border-top:3px solid var(--rule-strong)}
+h3{font-size:var(--t-sub);line-height:1.3;font-weight:720;margin:1.7em 0 .35em}
+.small{font:500 var(--t-label)/1.5 var(--cat);color:var(--ink-2)}
+
+/* spec line under the title: published, checked, reading, sources */
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 26px;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);max-width:var(--measure)}
+.spec div{padding:9px 12px 10px 0;min-width:0}
+.spec div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule)}
+.spec div:nth-child(n+3){border-top:1px solid var(--rule)}
+.spec dt{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2)}
+.spec dd{margin:3px 0 0;white-space:nowrap;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+@media (min-width:600px){.spec{grid-template-columns:repeat(4,auto)}.spec div:nth-child(n){border-top:0}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
+
+/* panels: In short, the shop — a ruled box whose head is flooded in the department ink */
+.panel{max-width:var(--measure);margin:0 0 10px;border-bottom:3px solid var(--rule-strong)}
+.panel-head{margin:0;padding:8px 16px 9px;border:0;background:var(--dept);color:var(--on-dept);font:750 .9375rem/1.2 var(--cat);letter-spacing:0;max-width:none}
+.panel-body{margin:0;padding:10px 0 14px 1.3rem}
+.panel-body li{margin:.3rem 0}
+.panel.shop{margin:44px 0}
+.panel.shop .panel-body{padding-left:0;list-style:none}
+.shop-name{font:780 1.25rem/1.25 var(--cat);margin:.2rem 0 .7rem}
+
+/* contents: a ruled list in the margin (wide) or a disclosure (narrow) */
+.contents h2{font:750 .9375rem/1.2 var(--cat);margin:0 0 6px;padding:0 0 8px;border-top:0;border-bottom:3px solid var(--rule-strong)}
+.contents ol{margin:0;padding:0;list-style:none}
+.contents li{border-bottom:1px solid var(--rule)}
+.contents a{display:block;padding:8px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.35 var(--cat)}
+.contents a:hover{color:var(--dept-text);text-decoration:underline}
+.contents.narrow{border-top:3px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);max-width:var(--measure)}
+.contents.narrow summary{cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;font:750 .9375rem/1.2 var(--cat)}
+.contents.narrow .count{font-weight:500;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.contents.narrow ol{padding-bottom:10px}
+.contents.narrow li:last-child{border-bottom:0}
+
+.layout{display:grid;gap:22px}
+.layout>header{min-width:0}
+.column{min-width:0;max-width:var(--measure)}
+.contents.wide{display:none}
+.margin{min-width:0}
+@media (min-width:1100px){
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);grid-template-areas:"head side" "body side";grid-template-rows:auto 1fr;column-gap:64px;row-gap:0}
+  .layout>header{grid-area:head}.column{grid-area:body}
+  .margin{grid-area:side;justify-self:end;width:min(100%,19rem);position:sticky;top:24px;align-self:start;margin-top:2.2rem}
+  .contents.wide{display:block}.contents.narrow{display:none}
+}
+
+.prose{max-width:var(--measure);min-width:0}
+.prose p,.prose li{hyphens:auto;text-wrap:pretty}
+.prose ul,.prose ol{padding-left:1.3rem}
+.prose li{margin:.35rem 0}
+.prose li::marker{color:var(--ink-2);font-family:var(--cat);font-weight:700;font-variant-numeric:tabular-nums}
+.prose blockquote{margin:1.4rem 0;padding:.7rem 1rem;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);font-style:italic}
+.prose strong{font-weight:700}
+.prose code{font:500 .9em/1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:var(--dept-tint);padding:.1em .3em}
+.prose hr{border:0;border-top:3px solid var(--rule-strong);margin:2.4rem 0}
+
+/* tables: the catalogue spec chart — flooded head, tinted every other row, figures in line */
+.table-wrap{overflow-x:auto;margin:1.6rem 0;-webkit-overflow-scrolling:touch;max-width:100%}
+table{border-collapse:collapse;width:100%;font:450 .9375rem/1.45 var(--cat);border-bottom:3px solid var(--rule-strong);font-variant-numeric:lining-nums tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:9px 14px;border-bottom:1px solid var(--rule)}
+th{font-weight:750;background:var(--dept);color:var(--on-dept);border-bottom:0}
+tbody tr:nth-child(even) td{background:var(--dept-tint)}
+tr:last-child td{border-bottom:0}
+
+.button{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;margin:4px 16px 4px 0;background:var(--dept);color:var(--on-dept);font:750 1rem/1 var(--cat);text-decoration:none;border-radius:6px;white-space:nowrap}
+.button:visited{color:var(--on-dept)}
+.button:hover{background:var(--dept-deep)}
+
+/* questions: a drawn plus that turns to a minus */
+.faq details{border-bottom:1px solid var(--rule);max-width:var(--measure)}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;min-height:52px;padding:8px 0;font:700 1.0625rem/1.35 var(--cat)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"";flex:none;width:13px;height:13px;background:linear-gradient(var(--ink),var(--ink)) center/13px 2.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/2.5px 13px no-repeat;transition:transform .22s cubic-bezier(.2,.8,.2,1)}
+.faq details[open] summary::before{transform:rotate(90deg);background:linear-gradient(var(--ink),var(--ink)) center/13px 2.5px no-repeat}
+.faq details p{margin:0 0 16px 27px}
+.sources ol{font-size:.9375rem;line-height:1.5;padding-left:1.4rem;max-width:var(--measure)}
+.sources li{margin:.45rem 0}
+.sources li::marker{font:700 .875rem var(--cat);font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.how{max-width:var(--measure);margin-top:2.4rem}
+
+/* ---------- catalogue entries: ruled lists, never cards ---------- */
+.entries{list-style:none;margin:0;padding:0;border-top:3px solid var(--rule-strong);max-width:var(--measure)}
+.entries li{display:grid;gap:4px;align-content:start;padding:15px 0 17px;border-bottom:1px solid var(--rule);break-inside:avoid}
+.entries a{text-decoration:none;color:var(--ink);display:block}
+.entry-title{display:block;font:740 var(--t-sub)/1.28 var(--cat);letter-spacing:-.006em}
+.entries a:hover .entry-title{color:var(--dept-text);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.18em}
+.entry-desc{display:block;color:var(--ink-2);font-size:.9688rem;line-height:1.5;margin-top:5px}
+.entries time{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2);font-variant-numeric:lining-nums tabular-nums}
+h2+.entries,h2+.entries.columns{border-top:0}
+.empty{color:var(--ink-2);max-width:var(--measure);margin:1rem 0}
+
+/* hub: the start entry larger, the rest in two hard columns on wide screens */
+.hub .start .entry-title{font-size:var(--t-title);font-weight:820;letter-spacing:-.02em;line-height:1.08}
+.hub .start{margin-top:2.2rem}
+.hub .entries,.hub h2{max-width:none}
+.hub .entry-desc{max-width:var(--measure)}
+@media (min-width:1000px){
+  .entries.columns{max-width:none;columns:2;column-gap:56px;column-rule:1px solid var(--rule);border-top:0}
+  .entries.columns li{border-top:0}
+  .hub section:has(.columns) h2{max-width:none}
+}
+
+/* home: the index to departments — the department's name on its own ink, its entries beside it */
+.index-head{max-width:none;margin-top:1.6em}
+.dept{display:grid;gap:12px;padding:18px 0 26px;border-bottom:1px solid var(--rule)}
+.dept h3{margin:0}
+.dept h3 a{display:inline-block;background:var(--dept);color:#fff;text-decoration:none;font:800 1.25rem/1.15 var(--cat);letter-spacing:-.01em;padding:10px 14px 11px;border-radius:6px 6px 0 0;min-width:min(100%,15rem)}
+.dept h3 a:hover{background:var(--dept-deep)}
+.dept .entries{border-top-width:1px}
+.more{margin:.7rem 0 0;font:650 .9375rem/1.4 var(--cat)}
+@media (min-width:900px){
+  .dept{grid-template-columns:17rem minmax(0,1fr);gap:40px;align-items:start}
+  .dept h3 a{display:block;min-width:0}
+  .dept .entries{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;border-top:0}
+  .dept .entries li:nth-child(-n+2){padding-top:0}
+  .dept .empty{margin:6px 0}
+}
+
+footer.site{border-top:6px solid var(--rule-strong);background:var(--sheet-white);font:500 .9375rem/1.55 var(--cat);color:var(--ink-2)}
+footer.site .bar{max-width:var(--page);margin:0 auto;padding:22px var(--gap) 30px}
+footer.site p{margin:.35rem 0;max-width:var(--measure)}
+footer.site a{color:var(--ink)}
+footer.site .small{color:var(--ink-2)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{header.site .tabs,header.site .top,.button,footer.site,.margin,.theme{display:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a{color:#000}body{background:#fff;color:#000}}
+/* language row (shown only when a second language is live): the language being read is not a link */
+.langs{display:flex;gap:2px 14px;font:600 var(--t-label)/1 var(--cat)}
+.langs a{text-decoration:none;padding:14px 2px}
+.langs a:hover{text-decoration:underline}
+.langs span[aria-current]{padding:12px 2px;border-bottom:2px solid var(--on-dept)}
+@media (max-width:719px){.top{flex-wrap:wrap}.langs{order:5;flex-basis:100%;padding-bottom:4px}}
+/* long German and Spanish words break at syllables instead of running off a phone screen */
+:lang(de) h1,:lang(de) h2,:lang(de) h3,:lang(de) .running-name,:lang(de) .entry-title,:lang(de) .tabs a,:lang(es) h1,:lang(es) h2,:lang(es) .running-name{hyphens:auto;-webkit-hyphens:auto}
+:lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+/* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
+html:not([lang=en]) .spec dd{white-space:normal}
+/* «Add this table to your site» (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.6rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:650 var(--t-label)/1.4 var(--cat);color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+
+/* calculator (tool pages, config/tools.json, scripts/tools.mjs): an order form in the
+   catalogue — ruled box, flooded head rule, fields in the reading face. The form stays
+   hidden without its script; the chart below it answers alone. */
+.calc{max-width:var(--measure);margin:1.6rem 0;padding:14px 18px 18px;background:var(--sheet-white);border:1px solid var(--rule);border-top:6px solid var(--dept)}
+.calc[hidden]{display:none}
+.prose .calc-title{font:750 1.0625rem/1.25 var(--cat);margin:0 0 12px;padding:0;border:0;max-width:none}
+.calc fieldset{border:0;margin:0 0 4px;padding:0;min-width:0}
+.calc legend,.calc-row label{display:block;font:650 var(--t-label)/1.3 var(--cat);color:var(--ink-2);margin:0 0 6px;padding:0}
+.calc-modes label{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;font:400 1rem/1.35 var(--read);color:var(--ink);cursor:pointer}
+.calc-modes input{flex:none;width:20px;height:20px;margin:0}
+.calc-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end;margin:10px 0 0}
+.calc-row[hidden]{display:none}
+.calc input[type=text],.calc select{display:block;min-height:44px;width:9rem;max-width:100%;padding:8px 10px;font:400 1rem/1.2 var(--read);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--stock);border:1px solid var(--ink);border-radius:0}
+.calc select#calc-paper{width:auto;min-width:9rem}
+.calc input[aria-invalid=true]{border-width:2px;border-color:var(--dept-text)}
+.calc input:focus-visible,.calc select:focus-visible,.calc .button:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+.calc .button{margin:16px 0 0;cursor:pointer;border:0}
+.calc-result{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+.calc-result:empty{margin:0;padding:0;border:0}
+.calc-result p{margin:.35rem 0}
+.calc-result .calc-answer{font:750 1.375rem/1.25 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.calc-result .calc-error{font-weight:700}
+.calc-chart h3{max-width:var(--measure)}
+.calc-chart tbody th{background:none;color:var(--ink);font-weight:750;border-bottom:1px solid var(--rule)}
+.calc-chart tbody tr:nth-child(even) th{background:var(--dept-tint)}
+.calc-chart tbody tr:last-child th{border-bottom:0}
+.calc-chart td[data-dpi]{white-space:nowrap}
+.table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+@media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Wall Art & Prints","item":"https://printables.clovermoor.com/wall-art-prints/"},{"@type":"ListItem","position":3,"name":"A4 Size in Pixels: 72, 150 and 300 DPI Chart"}]},{"@type":"WebPage","@id":"https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/#article","name":"A4 Size in Pixels: 72, 150 and 300 DPI Chart","description":"A4 is 2480 x 3508 pixels at 300 dpi, 1240 x 1754 at 150 and 595 x 842 at 72. Chart for A5, A3, Letter and photo sizes, plus a pixels-to-print calculator.","inLanguage":"en","url":"https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/","datePublished":"2026-11-09","dateModified":"2026-11-09","author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"isPartOf":{"@id":"https://printables.clovermoor.com/#website"},"citation":["https://hk.canon/en/support/8200186400","https://www.hp.com/us-en/tech-takes/printers/glossary/paper-media.html","https://files.support.epson.com/docid/cpd5/cpd58148/source/specifications/references/et15000_l14150/spex_paper_spc_et15000_l14150.html","https://www.nist.gov/pml/owm/si-units-length","https://www.printful.com/create-digital-print-file"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is A4 size in pixels at 300 dpi?","acceptedAnswer":{"@type":"Answer","text":"2480 x 3508 pixels in portrait, 3508 x 2480 in landscape. A4 is 210 x 297 mm; 210 ÷ 25.4 × 300 = 2480.3 and 297 ÷ 25.4 × 300 = 3507.9, rounded to the nearest whole pixel."}},{"@type":"Question","name":"What is A4 in pixels at 72 dpi?","acceptedAnswer":{"@type":"Answer","text":"595 x 842 pixels. At 150 dpi it is 1240 x 1754. The paper does not change, only how many pixels you put on each inch of it."}},{"@type":"Question","name":"What resolution should an A4 printable be?","acceptedAnswer":{"@type":"Answer","text":"For a sharp print, 2480 x 3508 pixels or more. Printful, which prints posters to order, strongly recommends files at 300 DPI and accepts 75 DPI as the minimum for paper products, so a smaller file still prints, only softer."}},{"@type":"Question","name":"Is A4 the same as US Letter in pixels?","acceptedAnswer":{"@type":"Answer","text":"No. At 300 dpi A4 is 2480 x 3508 and US Letter is 2550 x 3300. Letter is 70 pixels wider and 208 pixels shorter, and the two have different shapes."}},{"@type":"Question","name":"How big can I print a 1920 x 1080 image?","acceptedAnswer":{"@type":"Answer","text":"At 300 dpi, 6.4 x 3.6 inches (162.6 x 91.4 mm): too small for a 4x6 photo, which needs 1200 x 1800. At 150 dpi it reaches 12.8 x 7.2 inches and covers a 5x7 photo turned sideways, but not A4."}}]}]}</script>
+</head>
+<body data-dept="1">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="band">
+<div class="top"><a class="brand" href="/">Clovermoor Printables</a><a class="about" href="/about/">About</a><nav class="langs" aria-label="Language"><span lang="en" aria-current="true">English</span><a href="/de/" hreflang="de" lang="de" data-goatcounter-click="lang-de">Deutsch</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day">Day</span><span class="theme-night">Night</span></button></div>
+<div class="running"><p class="running-name"><a href="/wall-art-prints/">Wall Art &amp; Prints</a></p></div>
+<nav class="tabs" aria-label="Departments"><div class="tabs-row"><a href="/wall-art-prints/" aria-current="page">Wall Art &amp; Prints</a><a href="/coloring-activity-pages/">Coloring &amp; Activity Pages</a><a href="/kids-learning/">Kids Learning</a><a href="/games-puzzles/">Games &amp; Puzzles</a><a href="/party-celebrations/">Party &amp; Celebrations</a><a href="/cards-stationery/">Cards &amp; Stationery</a><a href="/planners-journals-calendars/">Planners, Journals &amp; Calendars</a><a href="/clipart-design-assets/">Clipart &amp; Design Assets</a><a href="/phone-screen-backgrounds/">Phone &amp; Screen Backgrounds</a></div><details class="tabs-phone"><summary>All departments <span class="count">9</span></summary><div class="tabs-list"><a href="/wall-art-prints/" aria-current="page">Wall Art &amp; Prints</a><a href="/coloring-activity-pages/">Coloring &amp; Activity Pages</a><a href="/kids-learning/">Kids Learning</a><a href="/games-puzzles/">Games &amp; Puzzles</a><a href="/party-celebrations/">Party &amp; Celebrations</a><a href="/cards-stationery/">Cards &amp; Stationery</a><a href="/planners-journals-calendars/">Planners, Journals &amp; Calendars</a><a href="/clipart-design-assets/">Clipart &amp; Design Assets</a><a href="/phone-screen-backgrounds/">Phone &amp; Screen Backgrounds</a></div></details></nav></div></header>
+<script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/wall-art-prints/">Wall Art &amp; Prints</a> <span aria-hidden="true">›</span> <span aria-current="page">A4 Size in Pixels: 72, 150 and 300 DPI Chart</span></nav>
+<main id="main"><article class="sheet article"><div class="layout">
+<header><h1>A4 Size in Pixels: 72, 150 and 300 DPI Chart</h1>
+<dl class="spec">
+<div><dt>Published</dt><dd><time datetime="2026-11-09">9 November 2026</time></dd></div>
+<div><dt>Checked</dt><dd><time datetime="2026-11-09">9 November 2026</time></dd></div>
+<div><dt>Reading</dt><dd>5 min</dd></div>
+<div><dt>Sources</dt><dd><a href="#sources">5 named</a></dd></div>
+</dl></header>
+<div class="margin"><nav class="contents wide" aria-labelledby="contents-h"><h2 id="contents-h">In this article</h2><ol><li><a href="#how-the-pixels-are-worked-out">How the pixels are worked out</a></li><li><a href="#which-dpi-to-choose-72-150-or-300">Which dpi to choose: 72, 150 or 300</a></li><li><a href="#a4-a5-and-a3-why-the-numbers-repeat">A4, A5 and A3: why the numbers repeat</a></li><li><a href="#us-letter-is-not-a4">US Letter is not A4</a></li><li><a href="#from-pixels-to-print-size">From pixels to print size</a></li><li><a href="#photo-sizes-4x6-5x7-and-8x10">Photo sizes: 4x6, 5x7 and 8x10</a></li><li><a href="#making-a-file-at-the-right-size">Making a file at the right size</a></li><li><a href="#how-we-rounded-and-where-the-sizes-come-from">How we rounded and where the sizes come from</a></li></ol></nav><details class="contents narrow"><summary>In this article <span class="count">8 sections</span></summary><ol><li><a href="#how-the-pixels-are-worked-out">How the pixels are worked out</a></li><li><a href="#which-dpi-to-choose-72-150-or-300">Which dpi to choose: 72, 150 or 300</a></li><li><a href="#a4-a5-and-a3-why-the-numbers-repeat">A4, A5 and A3: why the numbers repeat</a></li><li><a href="#us-letter-is-not-a4">US Letter is not A4</a></li><li><a href="#from-pixels-to-print-size">From pixels to print size</a></li><li><a href="#photo-sizes-4x6-5x7-and-8x10">Photo sizes: 4x6, 5x7 and 8x10</a></li><li><a href="#making-a-file-at-the-right-size">Making a file at the right size</a></li><li><a href="#how-we-rounded-and-where-the-sizes-come-from">How we rounded and where the sizes come from</a></li></ol></details></div>
+<div class="column"><section class="panel short" aria-labelledby="short-h"><h2 id="short-h" class="panel-head">In short</h2><ul class="panel-body"><li>A4 is 210 x 297 mm, so it is 2480 x 3508 pixels at 300 dpi, 1240 x 1754 at 150 dpi and 595 x 842 at 72 dpi.</li><li>The rule: pixels = millimetres ÷ 25.4 × dpi, rounded to the nearest whole pixel. One inch is exactly 25.4 mm.</li><li>US Letter at 300 dpi is 2550 x 3300: wider and shorter than A4, so a file made for one does not fill the other exactly.</li><li>Going the other way, divide pixels by dpi: a 3000 x 4000 image covers A4 at 300 dpi and A3 at 150 dpi.</li></ul></section><div class="prose"><p>A4 in pixels is 2480 x 3508 at 300 dpi, 1240 x 1754 at 150 dpi and 595 x 842 at 72 dpi, portrait. A4 measures 210 x 297 mm, and each side becomes pixels as millimetres ÷ 25.4 × dpi, rounded to the nearest whole pixel. The chart below has A5, A3, US Letter and the common photo sizes too, and the calculator works both ways.</p>
+<div class="tool"><form class="calc" id="calc" data-tool="paper-pixels" hidden novalidate aria-labelledby="calc-h">
+<h2 id="calc-h" class="calc-title">Work out pixels or print size</h2>
+<fieldset class="calc-modes"><legend>Start from</legend>
+<label><input type="radio" name="mode" value="size" checked> <span>A paper or photo size</span></label>
+<label><input type="radio" name="mode" value="pixels"> <span>An image size in pixels</span></label>
+</fieldset>
+<div class="calc-row" data-mode="size">
+<div><label for="calc-paper">Paper size</label><select id="calc-paper" name="paper"><option value="a5">A5</option><option value="a4" selected>A4</option><option value="a3">A3</option><option value="letter">US Letter</option><option value="photo-4x6">4 × 6 in photo</option><option value="photo-5x7">5 × 7 in photo</option><option value="photo-8x10">8 × 10 in photo</option><option value="custom">Other size</option></select></div>
+</div>
+<div class="calc-row" data-mode="size" data-custom hidden>
+<div><label for="calc-w">Width</label><input id="calc-w" name="w" type="text" inputmode="decimal" autocomplete="off"></div><div><label for="calc-h">Height</label><input id="calc-h" name="h" type="text" inputmode="decimal" autocomplete="off"></div>
+<div><label for="calc-unit">Unit</label><select id="calc-unit" name="unit"><option value="mm" selected>mm</option><option value="in">in</option></select></div>
+</div>
+<div class="calc-row" data-mode="pixels" hidden>
+<div><label for="calc-pxw">Width in pixels</label><input id="calc-pxw" name="pxw" type="text" inputmode="numeric" autocomplete="off"></div><div><label for="calc-pxh">Height in pixels</label><input id="calc-pxh" name="pxh" type="text" inputmode="numeric" autocomplete="off"></div>
+</div>
+<div class="calc-row">
+<div><label for="calc-dpi">Resolution (dpi)</label><input id="calc-dpi" name="dpi" type="text" inputmode="numeric" autocomplete="off" value="300"></div>
+</div>
+<button class="button" type="submit">Work it out</button>
+<div class="calc-result" id="calc-result" role="status" aria-live="polite" aria-atomic="true"></div>
+</form>
+<script>(function client(D) {
+  var f = document.getElementById("calc");
+  if (!f) return;
+  var E = f.elements, out = document.getElementById("calc-result"), W = D.w, shown = false;
+  f.hidden = false;
+  var R = { nearest: Math.round, up: Math.ceil, down: Math.floor }[D.rounding] || Math.round;
+  function fill(s, v) { return s.replace(/\{(\w+)\}/g, function (m, k) { return k in v ? v[k] : m; }); }
+  function n(x, d) { return new Intl.NumberFormat(D.locale, { maximumFractionDigits: d, useGrouping: false }).format(x); }
+  function p(cls, html) { return "<p" + (cls ? ' class="' + cls + '"' : "") + ">" + html + "</p>"; }
+  function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+  function inch(s) { return s.unit === "in" ? [s.w, s.h] : [s.w / D.mm, s.h / D.mm]; }
+  function px(s, dpi) { var i = inch(s); return [R(i[0] * dpi), R(i[1] * dpi)]; }
+  function pxw(a) { return fill(W.pixels_word, { w: a[0], h: a[1] }); }
+  function mode() { return (f.querySelector("input[name=mode]:checked") || {}).value || "size"; }
+  function sync() {
+    var m = mode(), custom = E.paper.value === "custom";
+    [].forEach.call(f.querySelectorAll("[data-mode]"), function (el) {
+      el.hidden = el.getAttribute("data-mode") !== m || (el.hasAttribute("data-custom") && !custom);
+    });
+  }
+  // A number from a field, with a comma or a point for decimals; null when it is not one.
+  function read(el, lim, whole) {
+    var v = el.value.trim().replace(",", ".");
+    var x = /^\d+(\.\d+)?$/.test(v) ? Number(v) : NaN;
+    if (!(x >= lim[0] && x <= lim[1]) || (whole && x % 1)) return { bad: el, msg: fill(whole ? W.err_whole : W.err_range, { min: n(lim[0], 2), max: n(lim[1], 2) }) };
+    return { v: x };
+  }
+  function run() {
+    var fields = [], vals = {}, bad = null;
+    var dpi = read(E.dpi, D.limits.dpi, false);
+    var m = mode(), list = m === "pixels" ? [["pxw", D.limits.px, true], ["pxh", D.limits.px, true]] : E.paper.value === "custom" ? [["w", D.limits[E.unit.value], false], ["h", D.limits[E.unit.value], false]] : [];
+    list.forEach(function (x) { var r = read(E[x[0]], x[1], x[2]); fields.push(E[x[0]]); if (r.bad && !bad) bad = r; vals[x[0]] = r.v; });
+    fields.push(E.dpi);
+    if (!bad && dpi.bad) bad = dpi;
+    fields.forEach(function (el) { el.removeAttribute("aria-invalid"); el.removeAttribute("aria-describedby"); });
+    if (bad) {
+      bad.bad.setAttribute("aria-invalid", "true");
+      bad.bad.setAttribute("aria-describedby", "calc-result");
+      out.innerHTML = p("calc-error", esc(bad.msg));
+      return bad.bad;
+    }
+    var d = dpi.v, html;
+    if (m === "size") {
+      var s = E.paper.value === "custom"
+        ? { unit: E.unit.value, w: vals.w, h: vals.h, label: fill(W.custom_name, { w: n(vals.w, 2), h: n(vals.h, 2), unit: E.unit.value === "in" ? W.unit_in : W.unit_mm }) }
+        : D.sizes.filter(function (x) { return x.key === E.paper.value; })[0];
+      var a = px(s, d), i = inch(s);
+      html = p("calc-answer", esc(fill(W.size_answer, { paper: s.label, dpi: n(d, 2), px: pxw(a) }))) +
+        p("small", esc(fill(W.size_note, { mm: n(i[0] * D.mm, 1) + " × " + n(i[1] * D.mm, 1) + " " + W.unit_mm, "in": n(i[0], 2) + " × " + n(i[1], 2) + " " + W.unit_in, pxl: pxw([a[1], a[0]]) })));
+    } else {
+      var wi = vals.pxw / d, hi = vals.pxh / d;
+      var fits = D.sizes.filter(function (x) { var q = px(x, d); return (vals.pxw >= q[0] && vals.pxh >= q[1]) || (vals.pxw >= q[1] && vals.pxh >= q[0]); });
+      var area = function (x) { var q = inch(x); return q[0] * q[1]; };
+      fits.sort(function (a, b) { return area(b) - area(a); });
+      html = p("calc-answer", esc(fill(W.px_answer, { dpi: n(d, 2), "in": n(wi, 2) + " × " + n(hi, 2) + " " + W.unit_in }))) +
+        p("", esc(fill(W.px_note, { mm: n(wi * D.mm, 1) + " × " + n(hi * D.mm, 1) + " " + W.unit_mm })));
+      if (fits.length) html += p("", esc(fill(W.px_fits, { dpi: n(d, 2), list: fits.map(function (x) { return x.label; }).join(", "), best: fits[0].label })));
+      else {
+        var small = D.sizes.slice().sort(function (a, b) { return area(a) - area(b); })[0];
+        html += p("", esc(fill(W.px_none, { dpi: n(d, 2), paper: small.label, px: pxw(px(small, d)) })));
+      }
+    }
+    out.innerHTML = html;
+    return null;
+  }
+  sync();
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var bad = run();
+    shown = !bad;
+    if (bad) bad.focus();
+  });
+  f.addEventListener("change", function (e) {
+    if (e.target.name === "mode" || e.target.name === "paper") { sync(); out.innerHTML = ""; shown = false; return; }
+    if (shown) run();
+  });
+})({"locale":"en-GB","mm":25.4,"rounding":"nearest","limits":{"dpi":[1,2400],"px":[1,100000],"mm":[1,5000],"in":[0.1,200]},"sizes":[{"key":"a5","unit":"mm","w":148,"h":210,"label":"A5"},{"key":"a4","unit":"mm","w":210,"h":297,"label":"A4"},{"key":"a3","unit":"mm","w":297,"h":420,"label":"A3"},{"key":"letter","unit":"in","w":8.5,"h":11,"label":"US Letter"},{"key":"photo-4x6","unit":"in","w":4,"h":6,"label":"4 × 6 in photo"},{"key":"photo-5x7","unit":"in","w":5,"h":7,"label":"5 × 7 in photo"},{"key":"photo-8x10","unit":"in","w":8,"h":10,"label":"8 × 10 in photo"}],"w":{"unit_mm":"mm","unit_in":"in","heading":"Work out pixels or print size","mode_legend":"Start from","mode_size":"A paper or photo size","mode_pixels":"An image size in pixels","paper_label":"Paper size","custom_option":"Other size","width_label":"Width","height_label":"Height","unit_label":"Unit","px_width_label":"Width in pixels","px_height_label":"Height in pixels","dpi_label":"Resolution (dpi)","button":"Work it out","custom_name":"{w} × {h} {unit}","size_answer":"{paper} at {dpi} dpi: {px}","size_note":"{mm} = {in}. Pixels = inches × dpi, rounded to the nearest whole pixel. Turned to landscape: {pxl}.","px_answer":"At {dpi} dpi this image prints up to {in}","px_note":"That is {mm}. Inches = pixels ÷ dpi; 1 inch = 25.4 mm. Rounded to two decimals in inches and one in millimetres.","px_fits":"Big enough at {dpi} dpi for: {list}. The largest of these is {best}. Upright or turned sideways, as long as the shape matches.","px_none":"Smaller than every size in the table at {dpi} dpi. The smallest, {paper}, needs {px}.","pixels_word":"{w} × {h} pixels","err_range":"Enter a number from {min} to {max}.","err_whole":"Enter a whole number from {min} to {max}."}});</script>
+<section class="calc-chart" aria-labelledby="chart-h">
+<h3 id="chart-h">A4, A3, A5, Letter and photo sizes in pixels</h3>
+<p class="small">Pixels = millimetres ÷ 25.4 × dpi (1 inch is exactly 25.4 mm), rounded to the nearest whole pixel. Portrait, width × height: for landscape swap the two numbers. Paper sizes as Canon lists them for its printers.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-labelledby="chart-h"><table data-chart="paper-pixels">
+<thead><tr><th scope="col">Paper</th><th scope="col">Size</th><th scope="col">72 dpi</th><th scope="col">150 dpi</th><th scope="col">300 dpi</th></tr></thead><tbody><tr data-size="a5"><th scope="row">A5</th><td>148 × 210 mm (5.83 × 8.27 in)</td><td data-dpi="72">420 × 595</td><td data-dpi="150">874 × 1240</td><td data-dpi="300">1748 × 2480</td></tr><tr data-size="a4"><th scope="row">A4</th><td>210 × 297 mm (8.27 × 11.69 in)</td><td data-dpi="72">595 × 842</td><td data-dpi="150">1240 × 1754</td><td data-dpi="300">2480 × 3508</td></tr><tr data-size="a3"><th scope="row">A3</th><td>297 × 420 mm (11.69 × 16.54 in)</td><td data-dpi="72">842 × 1191</td><td data-dpi="150">1754 × 2480</td><td data-dpi="300">3508 × 4961</td></tr><tr data-size="letter"><th scope="row">US Letter</th><td>8.5 × 11 in (215.9 × 279.4 mm)</td><td data-dpi="72">612 × 792</td><td data-dpi="150">1275 × 1650</td><td data-dpi="300">2550 × 3300</td></tr><tr data-size="photo-4x6"><th scope="row">4 × 6 in photo</th><td>4 × 6 in (101.6 × 152.4 mm)</td><td data-dpi="72">288 × 432</td><td data-dpi="150">600 × 900</td><td data-dpi="300">1200 × 1800</td></tr><tr data-size="photo-5x7"><th scope="row">5 × 7 in photo</th><td>5 × 7 in (127 × 177.8 mm)</td><td data-dpi="72">360 × 504</td><td data-dpi="150">750 × 1050</td><td data-dpi="300">1500 × 2100</td></tr><tr data-size="photo-8x10"><th scope="row">8 × 10 in photo</th><td>8 × 10 in (203.2 × 254 mm)</td><td data-dpi="72">576 × 720</td><td data-dpi="150">1200 × 1500</td><td data-dpi="300">2400 × 3000</td></tr></tbody></table></div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-paper-pixels">HTML code</label>
+<textarea id="embed-paper-pixels" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;A4, A3, A5, Letter and photo sizes in pixels&lt;/figcaption&gt;
+&lt;p style=&quot;font-size:13px;margin:0 0 .5em&quot;&gt;Pixels = millimetres ÷ 25.4 × dpi (1 inch is exactly 25.4 mm), rounded to the nearest whole pixel. Portrait, width × height: for landscape swap the two numbers. Paper sizes as Canon lists them for its printers.&lt;/p&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Paper&lt;/th&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;Size&lt;/th&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;72 dpi&lt;/th&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;150 dpi&lt;/th&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;300 dpi&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;A5&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;148 × 210 mm (5.83 × 8.27 in)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;420 × 595&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;874 × 1240&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1748 × 2480&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;A4&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;210 × 297 mm (8.27 × 11.69 in)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;595 × 842&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1240 × 1754&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2480 × 3508&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;A3&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;297 × 420 mm (11.69 × 16.54 in)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;842 × 1191&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1754 × 2480&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;3508 × 4961&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;US Letter&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8.5 × 11 in (215.9 × 279.4 mm)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;612 × 792&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1275 × 1650&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2550 × 3300&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;4 × 6 in photo&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;4 × 6 in (101.6 × 152.4 mm)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;288 × 432&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;600 × 900&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1200 × 1800&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;5 × 7 in photo&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;5 × 7 in (127 × 177.8 mm)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;360 × 504&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;750 × 1050&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1500 × 2100&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;8 × 10 in photo&lt;/th&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;8 × 10 in (203.2 × 254 mm)&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;576 × 720&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;1200 × 1500&lt;/td&gt;&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;2400 × 3000&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. Paper sizes from Canon's printer specifications; 1 inch = 25.4 mm (NIST).&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-paper-pixels" data-done="Copied" hidden>Copy code</button></p>
+</details>
+</section></div><script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script>
+
+<h2 id="how-the-pixels-are-worked-out">How the pixels are worked out</h2>
+<p>A pixel has no size of its own. It gets one when you decide how many of them go on an inch of paper, and that number is the dpi. So the sum always runs through inches:</p>
+<ol>
+<li>Turn the paper size into inches. One inch is exactly 25.4 mm (NIST), so A4&#39;s 210 mm is 8.27 inches and its 297 mm is 11.69 inches.</li>
+<li>Multiply each side by the dpi. At 300 dpi that gives 2480.3 and 3507.9.</li>
+<li>Round to a whole pixel. We round to the nearest one, which gives 2480 x 3508.</li>
+</ol>
+<p>Sizes that are already in inches skip the first step. US Letter is 8.5 x 11 inches, so at 300 dpi it is 2550 x 3300 with nothing to round.</p>
+<p>Round up every time and A4&#39;s short side becomes 2481; round down every time and its long side becomes 3507. Start from inches already cut to 8.3 x 11.7 and you get 2490 x 3510. The differences are a few pixels on sides of thousands, too small to see in print. We picked one rule, the nearest whole pixel, and use it everywhere on the page: in the chart and in the calculator.</p>
+<h2 id="which-dpi-to-choose-72-150-or-300">Which dpi to choose: 72, 150 or 300</h2>
+<p>The same sheet of A4 can be 595 pixels wide or 2480. What changes is how many pixels the printer gets for every inch, and so how fine the detail can be.</p>
+<ul>
+<li>300 dpi is the number to aim for when the print should look crisp up close. Printful, which prints posters to order, strongly recommends 300 DPI files.</li>
+<li>150 dpi is half that, a middle step. Printful&#39;s own Design Maker is set to 150 DPI.</li>
+<li>72 dpi is in the chart so you can see how little paper a small image really covers. Printful&#39;s minimum for paper products is 75 DPI, so 72 sits just under the floor of one big print-on-demand shop.</li>
+</ul>
+<p>A word on names. Strictly, a file has pixels per inch (ppi) and a printer lays down dots per inch. Printful and most print shops say DPI for both, and so does this page.</p>
+<h2 id="a4-a5-and-a3-why-the-numbers-repeat">A4, A5 and A3: why the numbers repeat</h2>
+<p>Look down the chart and the same figures turn up in different rows. A5 at 300 dpi is 1748 x 2480, and 2480 is A4&#39;s short side. A3 at 300 dpi is 3508 x 4961, and 3508 is A4&#39;s long side.</p>
+<p>That is because each A size is the one above cut in half across its long side. Canon&#39;s measurements show it: A5 is 148 x 210 mm, A4 is 210 x 297 mm, A3 is 297 x 420 mm. The shape stays the same at every size, so an A4 file scales to A5 or A3 without cropping. It just carries more or fewer pixels per inch once printed. Our guide to <a href="/wall-art-prints/wall-art-sizes/">wall art sizes</a> groups every frame size by shape in the same way.</p>
+<h2 id="us-letter-is-not-a4">US Letter is not A4</h2>
+<p>In the United States the everyday sheet is US Letter, 8.5 x 11 inches; most other countries use A4, which HP describes as slightly narrower and taller. In pixels at 300 dpi:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Width</th>
+<th>Height</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A4</td>
+<td>2480</td>
+<td>3508</td>
+</tr>
+<tr>
+<td>US Letter</td>
+<td>2550</td>
+<td>3300</td>
+</tr>
+<tr>
+<td>Difference</td>
+<td>Letter is 70 wider</td>
+<td>Letter is 208 shorter</td>
+</tr>
+</tbody></table>
+</div><p>The shapes differ too: A4&#39;s long side is 1.41 times its short side, Letter&#39;s 1.29 times. An A4 file printed on Letter with &quot;fit to page&quot; shrinks to about 94% and leaves white strips down both sides. Printed at full size, it loses a strip at the bottom. If you design a printable for buyers in both places, make one file per sheet. Our step-by-step on <a href="/wall-art-prints/how-to-print-wall-art/">how to print wall art</a> covers the printer settings that cause most of these surprises.</p>
+<h2 id="from-pixels-to-print-size">From pixels to print size</h2>
+<p>The calculator&#39;s second mode answers the question buyers of printables ask most: is this file big enough? Divide each side in pixels by the dpi to get inches, then compare with the paper.</p>
+<p>Take an image of 3000 x 4000 pixels:</p>
+<ul>
+<li>At 300 dpi it is 10 x 13.33 inches. That covers A4 (2480 x 3508), US Letter, A5, 8x10, 5x7 and 4x6, but not A3.</li>
+<li>At 150 dpi it is 20 x 26.67 inches, enough for A3 (1754 x 2480 at that density).</li>
+</ul>
+<p>A file that covers a size in one direction also covers it turned sideways, as long as the shape matches. A 3508 x 2480 landscape image is the same A4 at 300 dpi. If the shapes do not match, part of the picture is cropped or a white margin appears; the <a href="/wall-art-prints/gallery-wall-ideas/">gallery wall ideas</a> keep every frame in one shape family for that reason.</p>
+<h2 id="photo-sizes-4x6-5x7-and-8x10">Photo sizes: 4x6, 5x7 and 8x10</h2>
+<p>Photo sizes are defined in inches, so their pixel counts come out round. At 300 dpi a 4x6 photo is 1200 x 1800, a 5x7 is 1500 x 2100 and an 8x10 is 2400 x 3000. Canon&#39;s printer specifications list them as 101.6 x 152.4 mm, 127.0 x 177.8 mm and 203.2 x 254.0 mm.</p>
+<p>An 8x10 at 300 dpi needs fewer pixels than A4 at 300 dpi, 2400 x 3000 against 2480 x 3508, so any A4-ready file has the pixels for a sharp 8x10. The shapes differ, though: fitted to the 8-inch width, the A4 picture runs about 13% too tall, and that strip is cropped from the top or bottom.</p>
+<h2 id="making-a-file-at-the-right-size">Making a file at the right size</h2>
+<p>When you start a design from scratch, set the canvas to the pixels in the chart for the largest paper and dpi you will need, then work at that size. Scaling a small file up later adds pixels but no detail.</p>
+<p>A few uses of the chart beyond wall art:</p>
+<ul>
+<li>Sticker sheets are laid out on Letter or A4 paper, so the canvas for a full page of homemade stickers is 2550 x 3300 or 2480 x 3508 at 300 dpi.</li>
+<li>A sublimation design is also printed on Letter or A4; the <a href="/clipart-design-assets/sublimation-tumbler-wrap-size-chart/">tumbler wrap size chart</a> gives the wrap sizes to place on that sheet.</li>
+<li>Screens work the other way: the pixels are fixed by the device and inches do not matter. For those, see <a href="/phone-screen-backgrounds/phone-wallpaper-size/">phone wallpaper size</a> and <a href="/phone-screen-backgrounds/twitch-overlay-size/">Twitch overlay size</a>.</li>
+</ul>
+<h2 id="how-we-rounded-and-where-the-sizes-come-from">How we rounded and where the sizes come from</h2>
+<p>Paper sizes are taken from Canon&#39;s printer specifications and checked against HP&#39;s paper guide and Epson&#39;s paper specifications, which give the same millimetres. The inch is 25.4 mm exactly, as defined by NIST. In the chart and the calculator, pixels are rounded to the nearest whole pixel. In the reverse mode, inches are rounded to two decimals and millimetres to one, while the &quot;big enough for&quot; list compares your pixels with the chart&#39;s own figures, so a 2480 x 3508 file always counts as A4 at 300 dpi.</p>
+</div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
+
+<section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>What is A4 size in pixels at 300 dpi?</summary><p>2480 x 3508 pixels in portrait, 3508 x 2480 in landscape. A4 is 210 x 297 mm; 210 ÷ 25.4 × 300 = 2480.3 and 297 ÷ 25.4 × 300 = 3507.9, rounded to the nearest whole pixel.</p></details><details><summary>What is A4 in pixels at 72 dpi?</summary><p>595 x 842 pixels. At 150 dpi it is 1240 x 1754. The paper does not change, only how many pixels you put on each inch of it.</p></details><details><summary>What resolution should an A4 printable be?</summary><p>For a sharp print, 2480 x 3508 pixels or more. Printful, which prints posters to order, strongly recommends files at 300 DPI and accepts 75 DPI as the minimum for paper products, so a smaller file still prints, only softer.</p></details><details><summary>Is A4 the same as US Letter in pixels?</summary><p>No. At 300 dpi A4 is 2480 x 3508 and US Letter is 2550 x 3300. Letter is 70 pixels wider and 208 pixels shorter, and the two have different shapes.</p></details><details><summary>How big can I print a 1920 x 1080 image?</summary><p>At 300 dpi, 6.4 x 3.6 inches (162.6 x 91.4 mm): too small for a 4x6 photo, which needs 1200 x 1800. At 150 dpi it reaches 12.8 x 7.2 inches and covers a 5x7 photo turned sideways, but not A4.</p></details></section>
+<section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://hk.canon/en/support/8200186400" rel="noopener">Printing Media (supported paper sizes)</a>, Canon Hong Kong support</li><li><a href="https://www.hp.com/us-en/tech-takes/printers/glossary/paper-media.html" rel="noopener">Printer Paper: Sizes, Weights &amp; Photo Paper</a>, HP Tech Takes</li><li><a href="https://files.support.epson.com/docid/cpd5/cpd58148/source/specifications/references/et15000_l14150/spex_paper_spc_et15000_l14150.html" rel="noopener">Paper Specifications, ET-15000 / L14150</a>, Epson support</li><li><a href="https://www.nist.gov/pml/owm/si-units-length" rel="noopener">SI Units – Length</a>, National Institute of Standards and Technology (NIST)</li><li><a href="https://www.printful.com/create-digital-print-file" rel="noopener">Create the perfect wall art print file</a>, Printful</li></ol></section>
+<p class="small how">We write these articles with help from an AI model. Every fact is checked against the sources listed under each article; anything we could not confirm is left out. <a href="/about/">How we write these pages</a>.</p>
+<section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/wall-art-prints/wall-art-sizes/"><span class="entry-title">Wall Art Sizes: Chart of Ratios, Frames and Pixels</span><span class="entry-desc">Standard wall art sizes grouped by ratio: 2:3 (4x6 to 24x36), 3:4 (12x16, 18x24), 4:5 (8x10, 16x20), ISO A4 to A1, with frames and print pixels.</span></a><time datetime="2026-11-03">3 November 2026</time></li><li><a href="/wall-art-prints/how-to-print-wall-art/"><span class="entry-title">How to Print Wall Art at Home, Staples or a Photo Lab</span><span class="entry-desc">How to print wall art: pick the file whose ratio matches your frame, print at Actual size on photo or matte paper, or order at Staples or a photo counter.</span></a><time datetime="2026-11-06">6 November 2026</time></li><li><a href="/phone-screen-backgrounds/phone-wallpaper-size/"><span class="entry-title">Phone Wallpaper Size: Pixels for iPhone, Pixel, Galaxy</span><span class="entry-desc">The right phone wallpaper size is your screen's resolution: 1206 x 2622 px for iPhone 17, 1080 x 2424 for Pixel 11, 1080 x 2340 for Galaxy S26.</span></a><time datetime="2026-11-02">2 November 2026</time></li></ul></section>
+</article></main>
+<footer class="site"><div class="bar">
+<p>Ideas and how-tos for printables and digital design files.</p>
+<p><a href="/about/">About these pages</a> · <a href="/feed.xml">Feed</a></p>
+<p class="small">We write these articles with help from an AI model. Every fact is checked against the sources listed under each article; anything we could not confirm is left out.</p>
+</div></footer>
+</body>
+</html>

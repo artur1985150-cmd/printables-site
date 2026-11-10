@@ -289,20 +289,50 @@ html:not([lang=en]) .spec dd{white-space:normal}
 .embed label{display:block;margin:8px 0 6px}
 .embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
 .embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+
+/* calculator (tool pages, config/tools.json, scripts/tools.mjs): an order form in the
+   catalogue — ruled box, flooded head rule, fields in the reading face. The form stays
+   hidden without its script; the chart below it answers alone. */
+.calc{max-width:var(--measure);margin:1.6rem 0;padding:14px 18px 18px;background:var(--sheet-white);border:1px solid var(--rule);border-top:6px solid var(--dept)}
+.calc[hidden]{display:none}
+.prose .calc-title{font:750 1.0625rem/1.25 var(--cat);margin:0 0 12px;padding:0;border:0;max-width:none}
+.calc fieldset{border:0;margin:0 0 4px;padding:0;min-width:0}
+.calc legend,.calc-row label{display:block;font:650 var(--t-label)/1.3 var(--cat);color:var(--ink-2);margin:0 0 6px;padding:0}
+.calc-modes label{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;font:400 1rem/1.35 var(--read);color:var(--ink);cursor:pointer}
+.calc-modes input{flex:none;width:20px;height:20px;margin:0}
+.calc-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end;margin:10px 0 0}
+.calc-row[hidden]{display:none}
+.calc input[type=text],.calc select{display:block;min-height:44px;width:9rem;max-width:100%;padding:8px 10px;font:400 1rem/1.2 var(--read);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--stock);border:1px solid var(--ink);border-radius:0}
+.calc select#calc-paper{width:auto;min-width:9rem}
+.calc input[aria-invalid=true]{border-width:2px;border-color:var(--dept-text)}
+.calc input:focus-visible,.calc select:focus-visible,.calc .button:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+.calc .button{margin:16px 0 0;cursor:pointer;border:0}
+.calc-result{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+.calc-result:empty{margin:0;padding:0;border:0}
+.calc-result p{margin:.35rem 0}
+.calc-result .calc-answer{font:750 1.375rem/1.25 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.calc-result .calc-error{font-weight:700}
+.calc-chart h3{max-width:var(--measure)}
+.calc-chart tbody th{background:none;color:var(--ink);font-weight:750;border-bottom:1px solid var(--rule)}
+.calc-chart tbody tr:nth-child(even) th{background:var(--dept-tint)}
+.calc-chart tbody tr:last-child th{border-bottom:0}
+.calc-chart td[data-dpi]{white-space:nowrap}
+.table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+@media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Wall Art & Prints"}]},{"@type":"CollectionPage","name":"Wall Art & Prints","url":"https://printables.clovermoor.com/wall-art-prints/","inLanguage":"en","hasPart":[{"@id":"https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/#article"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Wall Art & Prints"}]},{"@type":"CollectionPage","name":"Wall Art & Prints","url":"https://printables.clovermoor.com/wall-art-prints/","inLanguage":"en","hasPart":[{"@id":"https://printables.clovermoor.com/wall-art-prints/gallery-wall-ideas/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/#article"}]}]}</script>
 </head>
 <body data-dept="1">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site"><div class="band">
-<div class="top"><a class="brand" href="/">Clovermoor Printables</a><a class="about" href="/about/">About</a><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day">Day</span><span class="theme-night">Night</span></button></div>
+<div class="top"><a class="brand" href="/">Clovermoor Printables</a><a class="about" href="/about/">About</a><nav class="langs" aria-label="Language"><span lang="en" aria-current="true">English</span><a href="/de/" hreflang="de" lang="de" data-goatcounter-click="lang-de">Deutsch</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day">Day</span><span class="theme-night">Night</span></button></div>
 <div class="running"><h1>Wall Art &amp; Prints</h1><p class="lead">Ideas, sizes and how-tos: Wall Art &amp; Prints.</p></div>
 <nav class="tabs" aria-label="Departments"><div class="tabs-row"><a href="/wall-art-prints/" aria-current="page">Wall Art &amp; Prints</a><a href="/coloring-activity-pages/">Coloring &amp; Activity Pages</a><a href="/kids-learning/">Kids Learning</a><a href="/games-puzzles/">Games &amp; Puzzles</a><a href="/party-celebrations/">Party &amp; Celebrations</a><a href="/cards-stationery/">Cards &amp; Stationery</a><a href="/planners-journals-calendars/">Planners, Journals &amp; Calendars</a><a href="/clipart-design-assets/">Clipart &amp; Design Assets</a><a href="/phone-screen-backgrounds/">Phone &amp; Screen Backgrounds</a></div><details class="tabs-phone"><summary>All departments <span class="count">9</span></summary><div class="tabs-list"><a href="/wall-art-prints/" aria-current="page">Wall Art &amp; Prints</a><a href="/coloring-activity-pages/">Coloring &amp; Activity Pages</a><a href="/kids-learning/">Kids Learning</a><a href="/games-puzzles/">Games &amp; Puzzles</a><a href="/party-celebrations/">Party &amp; Celebrations</a><a href="/cards-stationery/">Cards &amp; Stationery</a><a href="/planners-journals-calendars/">Planners, Journals &amp; Calendars</a><a href="/clipart-design-assets/">Clipart &amp; Design Assets</a><a href="/phone-screen-backgrounds/">Phone &amp; Screen Backgrounds</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <span aria-current="page">Wall Art &amp; Prints</span></nav>
 <main id="main"><div class="sheet hub">
 <section class="start" aria-label="Start here"><ul class="entries"><li><a href="/wall-art-prints/wall-art-sizes/"><span class="entry-title">Wall Art Sizes: Chart of Ratios, Frames and Pixels</span><span class="entry-desc">Standard wall art sizes grouped by ratio: 2:3 (4x6 to 24x36), 3:4 (12x16, 18x24), 4:5 (8x10, 16x20), ISO A4 to A1, with frames and print pixels.</span></a><time datetime="2026-11-03">3 November 2026</time></li></ul></section>
-<section><h2>All articles</h2><ul class="entries columns"><li><a href="/wall-art-prints/how-to-print-wall-art/"><span class="entry-title">How to Print Wall Art at Home, Staples or a Photo Lab</span><span class="entry-desc">How to print wall art: pick the file whose ratio matches your frame, print at Actual size on photo or matte paper, or order at Staples or a photo counter.</span></a><time datetime="2026-11-06">6 November 2026</time></li></ul></section>
+<section><h2>All articles</h2><ul class="entries columns"><li><a href="/wall-art-prints/gallery-wall-ideas/"><span class="entry-title">Gallery Wall Ideas With Exact Sizes and Spacing</span><span class="entry-desc">Gallery wall ideas for living room, bedroom, hallway and office, each with frame sizes, spacing (5 cm to start), total footprint and a centre 145 cm high.</span></a><time datetime="2026-11-10">10 November 2026</time></li><li><a href="/wall-art-prints/a4-size-in-pixels/"><span class="entry-title">A4 Size in Pixels: 72, 150 and 300 DPI Chart</span><span class="entry-desc">A4 is 2480 x 3508 pixels at 300 dpi, 1240 x 1754 at 150 and 595 x 842 at 72. Chart for A5, A3, Letter and photo sizes, plus a pixels-to-print calculator.</span></a><time datetime="2026-11-09">9 November 2026</time></li><li><a href="/wall-art-prints/how-to-print-wall-art/"><span class="entry-title">How to Print Wall Art at Home, Staples or a Photo Lab</span><span class="entry-desc">How to print wall art: pick the file whose ratio matches your frame, print at Actual size on photo or matte paper, or order at Staples or a photo counter.</span></a><time datetime="2026-11-06">6 November 2026</time></li></ul></section>
 
 </div></main>
 <footer class="site"><div class="bar">
