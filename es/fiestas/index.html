@@ -352,6 +352,14 @@ html:not([lang=en]) .spec dd{white-space:normal}
 /* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
    so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
 .calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+/* a long paper name (Spanish "Foto 10 × 15 cm (4 × 6 in)") never pushes the menu past a 280px screen or 200% text */
+.calc-row>*{min-width:0;max-width:100%}
+/* the band's top row wraps instead of running off the side when the words are long or the text is enlarged
+   (Spanish at 200% text on a 1280px laptop, 11.11.2026); at normal sizes it stays one row */
+.top{flex-wrap:wrap}
+/* the contents rail keeps at least 12rem: with text enlarged to 200% on a laptop the reading column
+   shrinks instead of squeezing the rail to nothing and pushing it past the edge (WebKit, Spanish, 11.11.2026) */
+@media (min-width:1100px){.layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr)}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/es/#website","url":"https://printables.clovermoor.com/es/","name":"Clovermoor Printables","inLanguage":"es","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://printables.clovermoor.com/es/"},{"@type":"ListItem","position":2,"name":"Fiestas y celebraciones"}]},{"@type":"CollectionPage","name":"Fiestas y celebraciones","url":"https://printables.clovermoor.com/es/fiestas/","inLanguage":"es","hasPart":[{"@id":"https://printables.clovermoor.com/es/fiestas/adornos-navidenos-caseros/#article"}]}]}</script>
 </head>
@@ -367,7 +375,9 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <section class="start" aria-label="Empieza aquí"><ul class="entries"><li><a href="/es/fiestas/adornos-navidenos-caseros/"><span class="entry-title">Adornos navideños caseros para el árbol y la casa</span><span class="entry-desc">Adornos navideños caseros para el árbol, la puerta y la mesa: rodajas de naranja seca, bolas de masa de sal, guirnaldas, estrella para la punta y corona.</span></a><time datetime="2026-11-12">12 de noviembre de 2026</time></li></ul></section>
 
 
-</div></main>
+<aside class="panel shop" aria-labelledby="products-h"><h2 id="products-h" class="panel-head">De nuestras tiendas</h2>
+<ul class="panel-body"><li><a href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" lang="en" data-goatcounter-click="listing-pinehold">One Day, You’ll Miss This — a memory-making guide for the dog still beside you</a></li><li><a href="https://www.etsy.com/listing/4591734891" rel="noopener" lang="en" data-goatcounter-click="listing-pinehold">The House Your Cat Knows — a printable and digital archive for the life your cat shares with you</a></li></ul><div class="panel-body"><p class="small">Los productos y la tienda están en inglés.</p></div>
+</aside></div></main>
 <footer class="site"><div class="bar">
 <p>Ideas y guías prácticas para imprimibles y archivos de diseño digital.</p>
 <p><a href="/es/sobre-nosotros/">Sobre estas páginas</a> · <a href="/es/feed.xml">RSS</a></p>

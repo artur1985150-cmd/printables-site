@@ -353,6 +353,14 @@ html:not([lang=en]) .spec dd{white-space:normal}
 /* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
    so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
 .calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+/* a long paper name (Spanish "Foto 10 × 15 cm (4 × 6 in)") never pushes the menu past a 280px screen or 200% text */
+.calc-row>*{min-width:0;max-width:100%}
+/* the band's top row wraps instead of running off the side when the words are long or the text is enlarged
+   (Spanish at 200% text on a 1280px laptop, 11.11.2026); at normal sizes it stays one row */
+.top{flex-wrap:wrap}
+/* the contents rail keeps at least 12rem: with text enlarged to 200% on a laptop the reading column
+   shrinks instead of squeezing the rail to nothing and pushing it past the edge (WebKit, Spanish, 11.11.2026) */
+@media (min-width:1100px){.layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr)}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Wall Art & Prints"}]},{"@type":"CollectionPage","name":"Wall Art & Prints","url":"https://printables.clovermoor.com/wall-art-prints/","inLanguage":"en","hasPart":[{"@id":"https://printables.clovermoor.com/wall-art-prints/a4-size-in-pixels/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/gallery-wall-ideas/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/how-to-print-wall-art/#article"},{"@id":"https://printables.clovermoor.com/wall-art-prints/wall-art-sizes/#article"}]}]}</script>
 </head>
@@ -368,7 +376,9 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <section class="start" aria-label="Start here"><ul class="entries"><li><a href="/wall-art-prints/wall-art-sizes/"><span class="entry-title">Wall Art Sizes: Chart of Ratios, Frames and Pixels</span><span class="entry-desc">Standard wall art sizes grouped by ratio: 2:3 (4x6 to 24x36), 3:4 (12x16, 18x24), 4:5 (8x10, 16x20), ISO A4 to A1, with frames and print pixels.</span></a><time datetime="2026-11-03">3 November 2026</time></li></ul></section>
 <section><h2>All articles</h2><ul class="entries columns"><li><a href="/wall-art-prints/a4-size-in-pixels/"><span class="entry-title">A4 Size in Pixels: 72, 150 and 300 DPI Chart</span><span class="entry-desc">A4 is 2480 x 3508 pixels at 300 dpi, 1240 x 1754 at 150 and 595 x 842 at 72. Chart for A5, A3, Letter and photo sizes, plus a pixels-to-print calculator.</span></a><time datetime="2026-11-11">11 November 2026</time></li><li><a href="/wall-art-prints/gallery-wall-ideas/"><span class="entry-title">Gallery Wall Ideas With Exact Sizes and Spacing</span><span class="entry-desc">Gallery wall ideas for living room, bedroom, hallway and office, each with frame sizes, spacing (5 cm to start), total footprint and a centre 145 cm high.</span></a><time datetime="2026-11-10">10 November 2026</time></li><li><a href="/wall-art-prints/how-to-print-wall-art/"><span class="entry-title">How to Print Wall Art at Home, Staples or a Photo Lab</span><span class="entry-desc">How to print wall art: pick the file whose ratio matches your frame, print at Actual size on photo or matte paper, or order at Staples or a photo counter.</span></a><time datetime="2026-11-06">6 November 2026</time></li></ul></section>
 
-</div></main>
+<aside class="panel shop" aria-labelledby="products-h"><h2 id="products-h" class="panel-head">From our shops</h2>
+<ul class="panel-body"><li><a href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" data-goatcounter-click="listing-pinehold">One Day, You’ll Miss This — a memory-making guide for the dog still beside you</a></li><li><a href="https://www.etsy.com/listing/4591734891" rel="noopener" data-goatcounter-click="listing-pinehold">The House Your Cat Knows — a printable and digital archive for the life your cat shares with you</a></li></ul>
+</aside></div></main>
 <footer class="site"><div class="bar">
 <p>Ideas and how-tos for printables and digital design files.</p>
 <p><a href="/about/">About these pages</a> · <a href="/feed.xml">Feed</a></p>

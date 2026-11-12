@@ -352,6 +352,14 @@ html:not([lang=en]) .spec dd{white-space:normal}
 /* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
    so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
 .calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+/* a long paper name (Spanish "Foto 10 × 15 cm (4 × 6 in)") never pushes the menu past a 280px screen or 200% text */
+.calc-row>*{min-width:0;max-width:100%}
+/* the band's top row wraps instead of running off the side when the words are long or the text is enlarged
+   (Spanish at 200% text on a 1280px laptop, 11.11.2026); at normal sizes it stays one row */
+.top{flex-wrap:wrap}
+/* the contents rail keeps at least 12rem: with text enlarged to 200% on a laptop the reading column
+   shrinks instead of squeezing the rail to nothing and pushing it past the edge (WebKit, Spanish, 11.11.2026) */
+@media (min-width:1100px){.layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr)}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/de/#website","url":"https://printables.clovermoor.com/de/","name":"Clovermoor Printables","inLanguage":"de","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Startseite","item":"https://printables.clovermoor.com/de/"},{"@type":"ListItem","position":2,"name":"Karten & Papeterie"}]},{"@type":"CollectionPage","name":"Karten & Papeterie","url":"https://printables.clovermoor.com/de/karten/","inLanguage":"de","hasPart":[{"@id":"https://printables.clovermoor.com/de/karten/weihnachtskarten-basteln/#article"}]}]}</script>
 </head>
@@ -367,7 +375,9 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <section class="start" aria-label="Hier anfangen"><ul class="entries"><li><a href="/de/karten/weihnachtskarten-basteln/"><span class="entry-title">Weihnachtskarten basteln: einfache Ideen mit Anleitung</span><span class="entry-desc">Weihnachtskarten basteln mit Kartoffeldruck, Fingerabdrücken, Pop-up-Baum oder Washi-Tape: Anleitungen, Material von zu Hause und kurze Grüße für innen.</span></a><time datetime="2026-11-11">11. November 2026</time></li></ul></section>
 
 
-</div></main>
+<aside class="panel shop" aria-labelledby="products-h"><h2 id="products-h" class="panel-head">Aus unseren Shops</h2>
+<ul class="panel-body"><li><a href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" lang="en" data-goatcounter-click="listing-pinehold">One Day, You’ll Miss This — a memory-making guide for the dog still beside you</a></li><li><a href="https://www.etsy.com/listing/4591734891" rel="noopener" lang="en" data-goatcounter-click="listing-pinehold">The House Your Cat Knows — a printable and digital archive for the life your cat shares with you</a></li></ul><div class="panel-body"><p class="small">Die Produkte und der Shop sind auf Englisch.</p></div>
+</aside></div></main>
 <footer class="site"><div class="bar">
 <p>Ideen und Anleitungen für Druckvorlagen und digitale Designdateien.</p>
 <p><a href="/de/ueber-uns/">Über diese Seiten</a> · <a href="/de/feed.xml">Feed</a></p>
