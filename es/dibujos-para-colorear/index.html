@@ -159,7 +159,7 @@ h3{font-size:var(--t-sub);line-height:1.3;font-weight:720;margin:1.7em 0 .35em}
 .spec div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule)}
 .spec div:nth-child(n+3){border-top:1px solid var(--rule)}
 .spec dt{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2)}
-.spec dd{margin:3px 0 0;white-space:nowrap;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.spec dd{margin:3px 0 0;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
 @media (min-width:600px){.spec{grid-template-columns:repeat(4,auto)}.spec div:nth-child(n){border-top:0}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
 
 /* panels: In short, the shop — a ruled box whose head is flooded in the department ink */
@@ -323,6 +323,36 @@ html:not([lang=en]) .spec dd{white-space:normal}
 .calc-chart td[data-dpi]{white-space:nowrap}
 .table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
+/* layout v2 (config/site.json → layout_v2, 11.11.2026): home intro, the main guide first and wide
+   on the home index, and the product box — what it is, where it is bought, one button */
+.index-intro{max-width:var(--measure);margin:-.1rem 0 1.1rem;font:500 1rem/1.5 var(--cat);color:var(--ink-2)}
+@media (min-width:900px){
+  .dept .entries li.pillar{grid-column:1/-1}
+  .dept .entries li.pillar .entry-desc{max-width:var(--measure)}
+  .dept .entries li.pillar+li{padding-top:15px}
+}
+.panel.product{margin:2rem 0}
+.product .panel-body{padding:12px 0 16px}
+.product .product-title{font:780 1.25rem/1.25 var(--cat);margin:0 0 .35rem;hyphens:none}
+.product .product-what{margin:0 0 .5rem}
+.product .product-act{margin:.75rem 0 0}
+.product .product-act .button{margin:0}
+.product .product-more{margin:1rem 0 0}
+.product .product-list{list-style:none;margin:0;padding:0}
+.product .product-list li{margin:0;border-bottom:1px solid var(--rule)}
+.product .product-list li:last-child{border-bottom:0}
+.product .product-list a{display:block;padding:11px 0;font:600 1rem/1.35 var(--cat)}
+/* tap targets on phones (WCAG 2.5.5 / Apple HIG 44×44; config/devices.json → tap_target_min, 11.11.2026):
+   the header links get a 44px box; crumbs, footer and spec links get a bigger hit area through
+   padding cancelled by a negative margin, so nothing moves on the page */
+.brand,.about,.langs a{display:inline-flex;align-items:center;min-height:44px;padding-top:0;padding-bottom:0}
+.crumbs a,footer.site a,.spec a,.more a{display:inline-block;min-width:44px;text-align:center;padding:13px 6px;margin:-13px -6px}
+.contents.narrow a{padding:12px 0}
+/* the day/night switch stays hidden until its script runs (JavaScript off: the page follows the system) */
+.theme[hidden]{display:none}
+/* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
+   so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
+.calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/es/#website","url":"https://printables.clovermoor.com/es/","name":"Clovermoor Printables","inLanguage":"es","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://printables.clovermoor.com/es/"},{"@type":"ListItem","position":2,"name":"Dibujos para colorear y actividades"}]},{"@type":"CollectionPage","name":"Dibujos para colorear y actividades","url":"https://printables.clovermoor.com/es/dibujos-para-colorear/","inLanguage":"es","hasPart":[{"@id":"https://printables.clovermoor.com/es/dibujos-para-colorear/manualidades-navidenas/#article"}]}]}</script>
 </head>
@@ -331,7 +361,7 @@ html:not([lang=en]) .spec dd{white-space:normal}
 <header class="site"><div class="band">
 <div class="top"><a class="brand" href="/es/">Clovermoor Printables</a><a class="about" href="/es/sobre-nosotros/">Sobre nosotros</a><nav class="langs" aria-label="Idioma"><a href="/coloring-activity-pages/" hreflang="en" lang="en" data-goatcounter-click="lang-en">English</a><span lang="es" aria-current="true">Español</span><a href="/de/malvorlagen/" hreflang="de" lang="de" data-goatcounter-click="lang-de">Deutsch</a></nav><button class="theme" type="button" hidden aria-label="Páginas en modo noche" aria-pressed="false"><span class="theme-day">Día</span><span class="theme-night">Noche</span></button></div>
 <div class="running"><h1>Dibujos para colorear y actividades</h1><p class="lead">Ideas, medidas y guías prácticas: Dibujos para colorear y actividades.</p></div>
-<nav class="tabs" aria-label="Secciones"><div class="tabs-row"><a href="/es/laminas-decorativas/">Láminas y cuadros decorativos</a><a href="/es/dibujos-para-colorear/" aria-current="page">Dibujos para colorear y actividades</a></div><details class="tabs-phone"><summary>Todas las secciones <span class="count">2</span></summary><div class="tabs-list"><a href="/es/laminas-decorativas/">Láminas y cuadros decorativos</a><a href="/es/dibujos-para-colorear/" aria-current="page">Dibujos para colorear y actividades</a></div></details></nav></div></header>
+<nav class="tabs" aria-label="Secciones"><div class="tabs-row"><a href="/es/laminas-decorativas/">Láminas y cuadros decorativos</a><a href="/es/dibujos-para-colorear/" aria-current="page">Dibujos para colorear y actividades</a><a href="/es/fiestas/">Fiestas y celebraciones</a></div><details class="tabs-phone"><summary>Todas las secciones <span class="count">3</span></summary><div class="tabs-list"><a href="/es/laminas-decorativas/">Láminas y cuadros decorativos</a><a href="/es/dibujos-para-colorear/" aria-current="page">Dibujos para colorear y actividades</a><a href="/es/fiestas/">Fiestas y celebraciones</a></div></details></nav></div></header>
 <script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
 <nav class="crumbs" aria-label="Ruta de navegación"><a href="/es/">Inicio</a> <span aria-hidden="true">›</span> <span aria-current="page">Dibujos para colorear y actividades</span></nav>
 <main id="main"><div class="sheet hub">

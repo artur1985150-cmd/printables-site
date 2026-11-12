@@ -155,7 +155,7 @@ h3{font-size:var(--t-sub);line-height:1.3;font-weight:720;margin:1.7em 0 .35em}
 .spec div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule)}
 .spec div:nth-child(n+3){border-top:1px solid var(--rule)}
 .spec dt{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2)}
-.spec dd{margin:3px 0 0;white-space:nowrap;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.spec dd{margin:3px 0 0;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
 @media (min-width:600px){.spec{grid-template-columns:repeat(4,auto)}.spec div:nth-child(n){border-top:0}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
 
 /* panels: In short, the shop — a ruled box whose head is flooded in the department ink */
@@ -319,6 +319,36 @@ html:not([lang=en]) .spec dd{white-space:normal}
 .calc-chart td[data-dpi]{white-space:nowrap}
 .table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
+/* layout v2 (config/site.json → layout_v2, 11.11.2026): home intro, the main guide first and wide
+   on the home index, and the product box — what it is, where it is bought, one button */
+.index-intro{max-width:var(--measure);margin:-.1rem 0 1.1rem;font:500 1rem/1.5 var(--cat);color:var(--ink-2)}
+@media (min-width:900px){
+  .dept .entries li.pillar{grid-column:1/-1}
+  .dept .entries li.pillar .entry-desc{max-width:var(--measure)}
+  .dept .entries li.pillar+li{padding-top:15px}
+}
+.panel.product{margin:2rem 0}
+.product .panel-body{padding:12px 0 16px}
+.product .product-title{font:780 1.25rem/1.25 var(--cat);margin:0 0 .35rem;hyphens:none}
+.product .product-what{margin:0 0 .5rem}
+.product .product-act{margin:.75rem 0 0}
+.product .product-act .button{margin:0}
+.product .product-more{margin:1rem 0 0}
+.product .product-list{list-style:none;margin:0;padding:0}
+.product .product-list li{margin:0;border-bottom:1px solid var(--rule)}
+.product .product-list li:last-child{border-bottom:0}
+.product .product-list a{display:block;padding:11px 0;font:600 1rem/1.35 var(--cat)}
+/* tap targets on phones (WCAG 2.5.5 / Apple HIG 44×44; config/devices.json → tap_target_min, 11.11.2026):
+   the header links get a 44px box; crumbs, footer and spec links get a bigger hit area through
+   padding cancelled by a negative margin, so nothing moves on the page */
+.brand,.about,.langs a{display:inline-flex;align-items:center;min-height:44px;padding-top:0;padding-bottom:0}
+.crumbs a,footer.site a,.spec a,.more a{display:inline-block;min-width:44px;text-align:center;padding:13px 6px;margin:-13px -6px}
+.contents.narrow a{padding:12px 0}
+/* the day/night switch stays hidden until its script runs (JavaScript off: the page follows the system) */
+.theme[hidden]{display:none}
+/* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
+   so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
+.calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Phone & Screen Backgrounds","item":"https://printables.clovermoor.com/phone-screen-backgrounds/"},{"@type":"ListItem","position":3,"name":"Twitch Overlay Size: 1920x1080 and What Else Fits"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/phone-screen-backgrounds/twitch-overlay-size/#article","headline":"Twitch Overlay Size: 1920x1080 and What Else Fits","description":"Make a Twitch overlay 1920 x 1080 px, the size of a 1080p stream and your OBS canvas; 1280 x 720 for 720p. Panels: up to 320 x 600 px, under 1 MB.","inLanguage":"en","url":"https://printables.clovermoor.com/phone-screen-backgrounds/twitch-overlay-size/","mainEntityOfPage":"https://printables.clovermoor.com/phone-screen-backgrounds/twitch-overlay-size/","datePublished":"2026-11-06","dateModified":"2026-11-06","wordCount":972,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Phone & Screen Backgrounds","citation":["https://help.twitch.tv/s/article/broadcasting-guidelines?language=en_US","https://help.twitch.tv/s/article/how-to-edit-info-panels?language=en_US","https://obsproject.com/kb/obs-studio-overview","https://obsproject.com/kb/image-sources","https://www.w3.org/TR/png-3/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What size should a Twitch overlay be?","acceptedAnswer":{"@type":"Answer","text":"1920 x 1080 pixels for a 1080p setup, which is the resolution Twitch's broadcasting guidelines give for 1080p streams. If your OBS canvas is 1280 x 720, make it 1280 x 720. Either way the shape is 16:9."}},{"@type":"Question","name":"What size is an OBS overlay?","acceptedAnswer":{"@type":"Answer","text":"The size of your OBS Base (Canvas) Resolution, found in Settings > Video. The OBS guide describes the canvas as the space you have to fit your sources, usually your monitor or game resolution. An overlay at canvas size fills it exactly."}},{"@type":"Question","name":"If I stream at 720p, should my overlay be 720p?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. If your canvas is 1920 x 1080 and only the Output (Scaled) Resolution is 1280 x 720, design the overlay at 1920 x 1080; OBS scales the finished picture down. If the canvas itself is 1280 x 720, design at that size."}},{"@type":"Question","name":"What size are Twitch panels?","acceptedAnswer":{"@type":"Answer","text":"Twitch's help page says panel images must be under 1 MB and no larger than 320 px wide and 600 px high; bigger images are resized to those maximums."}},{"@type":"Question","name":"What file type should a stream overlay be?","acceptedAnswer":{"@type":"Answer","text":"PNG, so the areas where your game and camera show through stay transparent. The PNG format supports an alpha channel for transparency, and OBS image sources support PNG along with BMP, TGA, JPEG and GIF."}}]}]}</script>
 </head>

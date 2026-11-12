@@ -155,7 +155,7 @@ h3{font-size:var(--t-sub);line-height:1.3;font-weight:720;margin:1.7em 0 .35em}
 .spec div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule)}
 .spec div:nth-child(n+3){border-top:1px solid var(--rule)}
 .spec dt{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2)}
-.spec dd{margin:3px 0 0;white-space:nowrap;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.spec dd{margin:3px 0 0;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
 @media (min-width:600px){.spec{grid-template-columns:repeat(4,auto)}.spec div:nth-child(n){border-top:0}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
 
 /* panels: In short, the shop — a ruled box whose head is flooded in the department ink */
@@ -319,6 +319,36 @@ html:not([lang=en]) .spec dd{white-space:normal}
 .calc-chart td[data-dpi]{white-space:nowrap}
 .table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
+/* layout v2 (config/site.json → layout_v2, 11.11.2026): home intro, the main guide first and wide
+   on the home index, and the product box — what it is, where it is bought, one button */
+.index-intro{max-width:var(--measure);margin:-.1rem 0 1.1rem;font:500 1rem/1.5 var(--cat);color:var(--ink-2)}
+@media (min-width:900px){
+  .dept .entries li.pillar{grid-column:1/-1}
+  .dept .entries li.pillar .entry-desc{max-width:var(--measure)}
+  .dept .entries li.pillar+li{padding-top:15px}
+}
+.panel.product{margin:2rem 0}
+.product .panel-body{padding:12px 0 16px}
+.product .product-title{font:780 1.25rem/1.25 var(--cat);margin:0 0 .35rem;hyphens:none}
+.product .product-what{margin:0 0 .5rem}
+.product .product-act{margin:.75rem 0 0}
+.product .product-act .button{margin:0}
+.product .product-more{margin:1rem 0 0}
+.product .product-list{list-style:none;margin:0;padding:0}
+.product .product-list li{margin:0;border-bottom:1px solid var(--rule)}
+.product .product-list li:last-child{border-bottom:0}
+.product .product-list a{display:block;padding:11px 0;font:600 1rem/1.35 var(--cat)}
+/* tap targets on phones (WCAG 2.5.5 / Apple HIG 44×44; config/devices.json → tap_target_min, 11.11.2026):
+   the header links get a 44px box; crumbs, footer and spec links get a bigger hit area through
+   padding cancelled by a negative margin, so nothing moves on the page */
+.brand,.about,.langs a{display:inline-flex;align-items:center;min-height:44px;padding-top:0;padding-bottom:0}
+.crumbs a,footer.site a,.spec a,.more a{display:inline-block;min-width:44px;text-align:center;padding:13px 6px;margin:-13px -6px}
+.contents.narrow a{padding:12px 0}
+/* the day/night switch stays hidden until its script runs (JavaScript off: the page follows the system) */
+.theme[hidden]{display:none}
+/* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
+   so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
+.calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Cards & Stationery","item":"https://printables.clovermoor.com/cards-stationery/"},{"@type":"ListItem","position":3,"name":"Baby Shower Thank You Card Wording: 15 Examples"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/cards-stationery/baby-shower-thank-you-card-wording/#article","headline":"Baby Shower Thank You Card Wording: 15 Examples","description":"Baby shower thank you card wording: thank each guest for the exact gift and say how baby will use it. Examples for hosts, group gifts, money and late cards.","inLanguage":"en","url":"https://printables.clovermoor.com/cards-stationery/baby-shower-thank-you-card-wording/","mainEntityOfPage":"https://printables.clovermoor.com/cards-stationery/baby-shower-thank-you-card-wording/","datePublished":"2026-11-10","dateModified":"2026-11-10","wordCount":1189,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Cards & Stationery","citation":["https://emilypost.com/advice/baby-showers-thank-you-notes","https://emilypost.com/advice/thank-you-notes-to-send-or-not-to-send","https://emilypost.com/advice/being-thankful-thank-you-note-faqs","https://www.paperlesspost.com/blog/baby-shower-thank-you-wording/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do you write in a baby shower thank you card?","acceptedAnswer":{"@type":"Answer","text":"Greet the guest, thank them for the specific gift, add a line about how you'll use it or what their being there meant, and close warmly. Three or four sentences is plenty."}},{"@type":"Question","name":"When should baby shower thank you cards be sent?","acceptedAnswer":{"@type":"Answer","text":"The Emily Post Institute's advice is to try to finish them before the baby is born. Paperless Post suggests within a month of the shower or before the baby arrives, whichever comes first. If the baby beats you to it, send them anyway."}},{"@type":"Question","name":"Do I need a card if I thanked them at the shower?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Emily Post Institute says shower gifts should get a written note even though the giver was there and you thanked them in person."}},{"@type":"Question","name":"Can my partner write some of the cards?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Emily Post Institute says the person who received the gift writes the note, and couples can split notes for gifts they received together. It also says a host, partner or relative can help in a pinch."}},{"@type":"Question","name":"Is it OK to have guests address their own thank you envelopes?","acceptedAnswer":{"@type":"Answer","text":"The Emily Post Institute advises against it. A handwritten note should come in a handwritten envelope. Ask the host for the guest list with addresses instead."}}]}]}</script>
 </head>

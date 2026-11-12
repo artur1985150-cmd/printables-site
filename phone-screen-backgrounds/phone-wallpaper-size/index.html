@@ -155,7 +155,7 @@ h3{font-size:var(--t-sub);line-height:1.3;font-weight:720;margin:1.7em 0 .35em}
 .spec div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule)}
 .spec div:nth-child(n+3){border-top:1px solid var(--rule)}
 .spec dt{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2)}
-.spec dd{margin:3px 0 0;white-space:nowrap;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.spec dd{margin:3px 0 0;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
 @media (min-width:600px){.spec{grid-template-columns:repeat(4,auto)}.spec div:nth-child(n){border-top:0}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
 
 /* panels: In short, the shop — a ruled box whose head is flooded in the department ink */
@@ -319,6 +319,36 @@ html:not([lang=en]) .spec dd{white-space:normal}
 .calc-chart td[data-dpi]{white-space:nowrap}
 .table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
 @media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
+/* layout v2 (config/site.json → layout_v2, 11.11.2026): home intro, the main guide first and wide
+   on the home index, and the product box — what it is, where it is bought, one button */
+.index-intro{max-width:var(--measure);margin:-.1rem 0 1.1rem;font:500 1rem/1.5 var(--cat);color:var(--ink-2)}
+@media (min-width:900px){
+  .dept .entries li.pillar{grid-column:1/-1}
+  .dept .entries li.pillar .entry-desc{max-width:var(--measure)}
+  .dept .entries li.pillar+li{padding-top:15px}
+}
+.panel.product{margin:2rem 0}
+.product .panel-body{padding:12px 0 16px}
+.product .product-title{font:780 1.25rem/1.25 var(--cat);margin:0 0 .35rem;hyphens:none}
+.product .product-what{margin:0 0 .5rem}
+.product .product-act{margin:.75rem 0 0}
+.product .product-act .button{margin:0}
+.product .product-more{margin:1rem 0 0}
+.product .product-list{list-style:none;margin:0;padding:0}
+.product .product-list li{margin:0;border-bottom:1px solid var(--rule)}
+.product .product-list li:last-child{border-bottom:0}
+.product .product-list a{display:block;padding:11px 0;font:600 1rem/1.35 var(--cat)}
+/* tap targets on phones (WCAG 2.5.5 / Apple HIG 44×44; config/devices.json → tap_target_min, 11.11.2026):
+   the header links get a 44px box; crumbs, footer and spec links get a bigger hit area through
+   padding cancelled by a negative margin, so nothing moves on the page */
+.brand,.about,.langs a{display:inline-flex;align-items:center;min-height:44px;padding-top:0;padding-bottom:0}
+.crumbs a,footer.site a,.spec a,.more a{display:inline-block;min-width:44px;text-align:center;padding:13px 6px;margin:-13px -6px}
+.contents.narrow a{padding:12px 0}
+/* the day/night switch stays hidden until its script runs (JavaScript off: the page follows the system) */
+.theme[hidden]{display:none}
+/* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
+   so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
+.calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Phone & Screen Backgrounds","item":"https://printables.clovermoor.com/phone-screen-backgrounds/"},{"@type":"ListItem","position":3,"name":"Phone Wallpaper Size: Pixels for iPhone, Pixel, Galaxy"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/phone-screen-backgrounds/phone-wallpaper-size/#article","headline":"Phone Wallpaper Size: Pixels for iPhone, Pixel, Galaxy","description":"The right phone wallpaper size is your screen's resolution: 1206 x 2622 px for iPhone 17, 1080 x 2424 for Pixel 11, 1080 x 2340 for Galaxy S26.","inLanguage":"en","url":"https://printables.clovermoor.com/phone-screen-backgrounds/phone-wallpaper-size/","mainEntityOfPage":"https://printables.clovermoor.com/phone-screen-backgrounds/phone-wallpaper-size/","datePublished":"2026-11-02","dateModified":"2026-11-02","wordCount":1368,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"articleSection":"Phone & Screen Backgrounds","citation":["https://www.apple.com/iphone/compare/","https://www.apple.com/iphone-17/specs/","https://www.apple.com/iphone-18-pro/specs/","https://www.apple.com/iphone-air/specs/","https://store.google.com/us/product/pixel_11_specs?hl=en-US","https://store.google.com/us/product/pixel_11_pro_specs?hl=en-US","https://www.samsung.com/za/business/smartphones/galaxy-s/galaxy-s26-sm-s942bzvpafa/","https://www.samsung.com/ca/business/smartphones/galaxy-s/galaxy-s26-ultra-sm-s948wzkexac/","https://news.samsung.com/sg/samsung-unveils-galaxy-s26-series-the-most-intuitive-galaxy-ai-phone-yet","https://store.google.com/us/product/pixel_10_specs?hl=en-US","https://store.google.com/us/product/pixel_10_pro_specs?hl=en-US","https://store.google.com/us/product/pixel_10a_specs?hl=en-US","https://www.samsung.com/us/support/answer/ANS10010464/","https://support.apple.com/en-us/102638","https://support.google.com/pixelphone/answer/7289143?hl=en"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the best size for a phone wallpaper?","acceptedAnswer":{"@type":"Answer","text":"Your own screen's resolution in pixels, in portrait. For an iPhone 17 that is 1206 x 2622, for a Pixel 11 it is 1080 x 2424, and for a Galaxy S26 it is 1080 x 2340. If one file has to fit many phones, 1440 x 3240 covers every phone in our table."}},{"@type":"Question","name":"Is 1080 x 1920 a good phone wallpaper size?","acceptedAnswer":{"@type":"Answer","text":"It was, when phones were 16:9. Current phones are taller (19.5:9 or 20:9), so the phone enlarges a 1080 x 1920 picture until it fills the height and cuts the sides. On a 1080 x 2340 screen only about 82% of the picture's width stays visible."}},{"@type":"Question","name":"What aspect ratio is a phone wallpaper?","acceptedAnswer":{"@type":"Answer","text":"Divide height by width. Recent iPhones and the Galaxy S26 come out at about 2.17 (19.5:9). Google lists the Pixel 11 and Pixel 10 as 20:9. Older phones such as the iPhone 8 were 16:9 (1.78)."}},{"@type":"Question","name":"How do I resize a picture to fit my phone wallpaper?","acceptedAnswer":{"@type":"Answer","text":"Crop it to your phone's ratio first, then resize to its pixel size in any photo editor: for an iPhone 17, crop to 1206 x 2622 or anything in the same shape. A picture smaller than your screen will look soft when the phone enlarges it, so start from the largest copy you have."}},{"@type":"Question","name":"How big is a phone wallpaper in inches or cm?","acceptedAnswer":{"@type":"Answer","text":"A wallpaper is measured in pixels, not inches. The screen it fills is small: an iPhone 17 shows 1206 x 2622 pixels at 460 per inch, about 2.6 x 5.7 in (6.7 x 14.5 cm)."}}]}]}</script>
 </head>
