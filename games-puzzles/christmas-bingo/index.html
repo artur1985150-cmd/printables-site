@@ -1,0 +1,718 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christmas Bingo: Rules, Word List and Card Sizes</title>
+<meta name="description" content="How to play Christmas bingo: cards of 3x3 to 5x5 pictures or words, a caller, and five in a row to win. Includes a 60-word call list and the card math.">
+<link rel="canonical" href="https://printables.clovermoor.com/games-puzzles/christmas-bingo/">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Christmas Bingo: Rules, Word List and Card Sizes">
+<meta property="og:description" content="How to play Christmas bingo: cards of 3x3 to 5x5 pictures or words, a caller, and five in a row to win. Includes a 60-word call list and the card math.">
+<meta property="og:url" content="https://printables.clovermoor.com/games-puzzles/christmas-bingo/">
+<meta property="og:site_name" content="Clovermoor Printables">
+<meta property="og:image" content="https://printables.clovermoor.com/img/generated/en/christmas-bingo-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Christmas Bingo: Rules, Word List and Card Sizes">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://printables.clovermoor.com/img/generated/en/christmas-bingo-cover.jpg">
+<meta name="color-scheme" content="light dark">
+<link rel="alternate" type="application/rss+xml" title="Clovermoor Printables" href="/feed.xml">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/fonts/charis-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/franklin.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<script data-goatcounter="https://printables.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script><script>document.addEventListener("DOMContentLoaded",function(){var p=location.pathname;document.querySelectorAll("[data-goatcounter-click]").forEach(function(a){a.setAttribute("data-goatcounter-referrer",p)});var m=document.querySelector("[data-read-end]");if(!m||!("IntersectionObserver" in window))return;var o=new IntersectionObserver(function(e){if(!e[0].isIntersecting)return;o.disconnect();(function s(n){var g=window.goatcounter;if(g&&g.count)g.count({path:"read-end"+p,title:document.title,event:true});else if(n<40)setTimeout(function(){s(n+1)},500)})(0)});o.observe(m)});</script>
+<meta name="google-site-verification" content="hHBGjlz6LvtyxdP3x3sWT5arWOdvQq0RpVLMBuHod_0">
+<meta name="msvalidate.01" content="74194B63F367EB355F843A035E6E6554">
+<meta name="yandex-verification" content="c46241a076187e57">
+<meta name="p:domain_verify" content="16ff5edbd4738a43bf460ee40d3b109b">
+<style>/* Clovermoor Printables — the reference pages of a mail-order craft and party
+   supply catalogue. Coated white stock, one black ink for every word and rule,
+   and one flood spot ink per department: the running-head band, the pulled tab,
+   the head of a spec chart. Day and night share the inks; only the stock changes.
+   Fonts: Libre Franklin (catalogue gothic) and Charis SIL (Charter, drawn for
+   laser printers). Decisions and their sources: DESIGN.md. */
+@font-face{font-family:"Charis SIL";src:url(/fonts/charis-400.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Charis SIL";src:url(/fonts/charis-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Charis SIL";src:url(/fonts/charis-700.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Libre Franklin";src:url(/fonts/franklin.woff2) format("woff2");font-weight:100 900;font-style:normal;font-display:swap}
+
+:root{
+  /* stock and the one ink */
+  --stock:#f6f7f8;--sheet-white:#fff;--ink:#141619;--ink-2:#4a4f57;--rule:#c8ccd1;--rule-strong:#141619;
+  /* highlighter for selection: the catalogue reader's marker */
+  --marker:#ffe14d;--marker-ink:#141619;
+  --on-dept:#fff;
+  --read:"Charis SIL",Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+  --cat:"Libre Franklin","Franklin Gothic Medium","Franklin Gothic","ITC Franklin Gothic","Arial Narrow",system-ui,sans-serif;
+  /* the fixed five-step ramp: running head, title, section, sub, body (+ label) */
+  --t-run:clamp(2.25rem,1.1rem + 5.2vw,5rem);
+  --t-title:clamp(1.75rem,1.2rem + 2.4vw,2.875rem);
+  --t-sec:1.5rem;--t-sub:1.1875rem;--t-body:1.0625rem;--t-label:.875rem;
+  --measure:38rem;--page:76rem;--gap:clamp(16px,4vw,40px);
+  color-scheme:light dark;
+}
+/* Ten spot inks, one per department, by its place in the Etsy list (build.mjs → deptOf).
+   Each ink: the ink itself (white type on it 5.8:1 or better; link colour on white),
+   -lite (night links, 42% ink in white), -deep and -deep2 (tabs, hover: 22% / 38% black),
+   -tint (day spec-chart rows, 7% ink in white), -tint-n (night rows, 22% ink in #1b1e22).
+   Written out as plain hex, not color-mix(): the contrast check reads computed colours.
+   The house ink (home, about, 404) is clover green on :root. */
+:root{--dept:#0b6b3a;--dept-lite:#99c1ac;--dept-deep:#09532d;--dept-deep2:#074224;--tint-d:#eef5f1;--tint-n:#172f27}
+[data-dept="1"]{--dept:#2b3fb4;--dept-lite:#a6aee0;--dept-deep:#22318c;--dept-deep2:#1b2770;--tint-d:#f0f2fa;--tint-n:#1f2542} /* ultramarine */
+[data-dept="2"]{--dept:#ad1767;--dept-lite:#dd9ebf;--dept-deep:#871250;--dept-deep2:#6b0e40;--tint-d:#f9eff4;--tint-n:#3b1c31} /* magenta */
+[data-dept="3"]{--dept:#00707a;--dept-lite:#94c3c7;--dept-deep:#00575f;--dept-deep2:#00454c;--tint-d:#edf5f6;--tint-n:#153035} /* peacock */
+[data-dept="4"]{--dept:#6331ad;--dept-lite:#bda8dd;--dept-deep:#4d2687;--dept-deep2:#3d1e6b;--tint-d:#f4f1f9;--tint-n:#2b2241} /* violet */
+[data-dept="5"]{--dept:#bb1630;--dept-lite:#e29da8;--dept-deep:#921125;--dept-deep2:#740e1e;--tint-d:#faeff1;--tint-n:#3e1c25} /* scarlet */
+[data-dept="6"]{--dept:#1f3d72;--dept-lite:#a1aec4;--dept-deep:#183059;--dept-deep2:#132647;--tint-d:#eff1f5;--tint-n:#1c2534} /* navy */
+[data-dept="7"]{--dept:#4c6812;--dept-lite:#b4c09b;--dept-deep:#3b510e;--dept-deep2:#2f400b;--tint-d:#f2f4ee;--tint-n:#262e1e} /* olive */
+[data-dept="8"]{--dept:#45505e;--dept-lite:#b1b6bb;--dept-deep:#363e49;--dept-deep2:#2b323a;--tint-d:#f2f3f4;--tint-n:#24292f} /* slate */
+[data-dept="9"]{--dept:#7a2a6e;--dept-lite:#c7a6c2;--dept-deep:#5f2156;--dept-deep2:#4c1a44;--tint-d:#f6f0f5;--tint-n:#302133} /* plum */
+[data-dept="10"]{--dept:#006690;--dept-lite:#94bfd0;--dept-deep:#005070;--dept-deep2:#003f59;--tint-d:#edf4f7;--tint-n:#152e3a} /* deep cyan */
+
+/* What text and rows use, resolved where the ink is set. */
+body,[data-dept]{--dept-text:var(--dept);--dept-tint:var(--tint-d)}
+
+/* Night: the same inks on a dark stock; links take the light tint of the ink. */
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){color-scheme:dark;
+  --stock:#131518;--sheet-white:#1b1e22;--ink:#eceef1;--ink-2:#b7bcc4;--rule:#3a3f47;--rule-strong:#d9dce0;
+}
+:root:not([data-theme=light]) [data-dept],:root:not([data-theme=light]) body{--dept-text:var(--dept-lite);--dept-tint:var(--tint-n)}}
+:root[data-theme=dark]{color-scheme:dark;
+  --stock:#131518;--sheet-white:#1b1e22;--ink:#eceef1;--ink-2:#b7bcc4;--rule:#3a3f47;--rule-strong:#d9dce0;
+}
+:root[data-theme=dark] [data-dept],:root[data-theme=dark] body{--dept-text:var(--dept-lite);--dept-tint:var(--tint-n)}
+:root[data-theme=light]{color-scheme:light}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scrollbar-color:var(--ink-2) var(--stock);accent-color:var(--dept);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;background:var(--stock);color:var(--ink);font:400 var(--t-body)/1.62 var(--read);overflow-wrap:break-word;caret-color:var(--dept-text)}
+::selection{background:var(--marker);color:var(--marker-ink)}
+/* links: black ink, underlined in the department ink (colour only floods or marks, never sets running text) */
+a{color:var(--ink);text-decoration-color:var(--dept-text);text-decoration-thickness:2px;text-underline-offset:.2em}
+a:hover{color:var(--dept-text);text-decoration-thickness:3px}
+:focus-visible{outline:3px solid var(--marker);outline-offset:2px;box-shadow:0 0 0 5px var(--ink)}
+img{max-width:100%;height:auto;display:block}
+picture{display:block;min-width:0}
+.skip{position:absolute;left:-999px}.skip:focus{left:16px;top:8px;background:var(--marker);color:var(--marker-ink);padding:8px 12px;z-index:9}
+
+/* ---------- the running-head band ---------- */
+header.site{background:var(--dept);color:var(--on-dept)}
+.band{max-width:var(--page);margin:0 auto;padding:0 var(--gap)}
+header.site a{color:var(--on-dept)}
+.top{display:flex;align-items:center;gap:8px 20px;min-height:52px;border-bottom:1px solid color-mix(in srgb,var(--on-dept) 35%,var(--dept))}
+.brand{font:800 1rem/1.1 var(--cat);letter-spacing:-.005em;text-decoration:none;margin-right:auto;padding:12px 0}
+.about{font:600 var(--t-label)/1 var(--cat);text-decoration:none;padding:14px 4px}
+.about:hover,.brand:hover{text-decoration:underline}
+.running{padding:clamp(18px,3vw,34px) 0 clamp(20px,3vw,30px)}
+.running h1,.running-name{margin:0;font:850 var(--t-run)/.94 var(--cat);letter-spacing:-.03em;text-wrap:balance;max-width:16ch;color:var(--on-dept)}
+.running-name{font-size:clamp(2.75rem,1.6rem + 4vw,4.25rem);max-width:none}
+.running-name a{text-decoration:none}
+.running-name a:hover{text-decoration:underline;text-decoration-thickness:3px}
+.running .lead{margin:.75em 0 0;max-width:36rem;font:500 1.125rem/1.45 var(--cat);color:var(--on-dept)}
+
+/* department tabs hang from the band; the current one is pulled out in stock */
+.tabs{margin:0}
+.tabs-row,.tabs-list{display:flex;flex-wrap:wrap;gap:4px}
+.tabs a,.tabs summary{display:flex;align-items:center;min-height:44px;padding:0 12px;font:650 .875rem/1.15 var(--cat);text-decoration:none;color:var(--on-dept);background:var(--dept-deep);border-radius:6px 6px 0 0;transition:transform .16s cubic-bezier(.2,.8,.2,1),background-color .16s}
+.tabs a:hover,.tabs summary:hover{background:var(--dept-deep2)}
+.tabs a[aria-current]{background:var(--stock);color:var(--dept-text);font-weight:800}
+.tabs-row{display:none}
+.tabs summary{list-style:none;cursor:pointer;gap:8px;width:max-content}
+.tabs summary::-webkit-details-marker{display:none}
+.tabs summary::after{content:"";width:7px;height:7px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s cubic-bezier(.2,.8,.2,1)}
+.tabs details[open] summary{border-radius:6px 6px 0 0;background:var(--dept-deep2)}
+.tabs details[open] summary::after{transform:translateY(2px) rotate(225deg)}
+.tabs .count{font-weight:500;font-variant-numeric:tabular-nums}
+.tabs-list{padding:8px 0 0;border-top:4px solid var(--dept-deep2)}
+@media (min-width:900px){
+  .tabs-row{display:flex}.tabs-phone{display:none}
+  .tabs a{padding:0 14px;font-size:.9375rem}
+  .tabs a:not([aria-current]):hover{transform:translateY(-3px)}
+}
+
+/* the day / night switch: two words, the current one inked in the band */
+.theme{display:inline-flex;align-items:stretch;min-height:44px;padding:4px;margin:0 -4px 0 0;gap:2px;background:none;border:1px solid color-mix(in srgb,var(--on-dept) 55%,var(--dept));border-radius:6px;cursor:pointer;font:650 .8125rem/1 var(--cat);color:var(--on-dept)}
+.theme span{display:flex;align-items:center;padding:0 9px;border-radius:3px}
+.theme[aria-pressed=false] .theme-day,.theme[aria-pressed=true] .theme-night{background:var(--on-dept);color:var(--dept)}
+.theme:hover{border-color:var(--on-dept)}
+
+.crumbs{max-width:var(--page);margin:0 auto;padding:18px var(--gap) 0;font:500 var(--t-label)/1.4 var(--cat);color:var(--ink-2)}
+.crumbs a{color:var(--ink-2)}
+.crumbs [aria-current]{color:var(--ink)}
+
+main{padding:0 0 72px}
+.sheet{max-width:var(--page);margin:0 auto;padding:0 var(--gap)}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--cat);color:var(--ink);text-wrap:balance}
+h1{font-size:var(--t-title);line-height:1.06;font-weight:820;letter-spacing:-.022em;margin:.5em 0 .5em;max-width:22ch}
+h2{max-width:var(--measure);font-size:var(--t-sec);line-height:1.2;font-weight:780;letter-spacing:-.012em;margin:2.2em 0 .5em;padding-top:.55em;border-top:3px solid var(--rule-strong)}
+h3{font-size:var(--t-sub);line-height:1.3;font-weight:720;margin:1.7em 0 .35em}
+.small{font:500 var(--t-label)/1.5 var(--cat);color:var(--ink-2)}
+
+/* spec line under the title: published, checked, reading, sources */
+.spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 26px;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);max-width:var(--measure)}
+.spec div{padding:9px 12px 10px 0;min-width:0}
+.spec div:nth-child(2n){padding-left:14px;border-left:1px solid var(--rule)}
+.spec div:nth-child(n+3){border-top:1px solid var(--rule)}
+.spec dt{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2)}
+.spec dd{margin:3px 0 0;font:650 .9375rem/1.3 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+@media (min-width:600px){.spec{grid-template-columns:repeat(4,auto)}.spec div:nth-child(n){border-top:0}.spec div+div{padding-left:14px;border-left:1px solid var(--rule)}}
+
+/* panels: In short, the shop — a ruled box whose head is flooded in the department ink */
+.panel{max-width:var(--measure);margin:0 0 10px;border-bottom:3px solid var(--rule-strong)}
+.panel-head{margin:0;padding:8px 16px 9px;border:0;background:var(--dept);color:var(--on-dept);font:750 .9375rem/1.2 var(--cat);letter-spacing:0;max-width:none}
+.panel-body{margin:0;padding:10px 0 14px 1.3rem}
+.panel-body li{margin:.3rem 0}
+.panel.shop{margin:44px 0}
+.panel.shop .panel-body{padding-left:0;list-style:none}
+.shop-name{font:780 1.25rem/1.25 var(--cat);margin:.2rem 0 .7rem}
+
+/* contents: a ruled list in the margin (wide) or a disclosure (narrow) */
+.contents h2{font:750 .9375rem/1.2 var(--cat);margin:0 0 6px;padding:0 0 8px;border-top:0;border-bottom:3px solid var(--rule-strong)}
+.contents ol{margin:0;padding:0;list-style:none}
+.contents li{border-bottom:1px solid var(--rule)}
+.contents a{display:block;padding:8px 0;color:var(--ink);text-decoration:none;font:500 .9375rem/1.35 var(--cat)}
+.contents a:hover{color:var(--dept-text);text-decoration:underline}
+.contents.narrow{border-top:3px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);max-width:var(--measure)}
+.contents.narrow summary{cursor:pointer;min-height:48px;display:flex;align-items:center;gap:10px;font:750 .9375rem/1.2 var(--cat)}
+.contents.narrow .count{font-weight:500;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.contents.narrow ol{padding-bottom:10px}
+.contents.narrow li:last-child{border-bottom:0}
+
+.layout{display:grid;gap:22px}
+.layout>header{min-width:0}
+.column{min-width:0;max-width:var(--measure)}
+.contents.wide{display:none}
+.margin{min-width:0}
+@media (min-width:1100px){
+  .layout{grid-template-columns:minmax(0,var(--measure)) minmax(0,1fr);grid-template-areas:"head side" "body side";grid-template-rows:auto 1fr;column-gap:64px;row-gap:0}
+  .layout>header{grid-area:head}.column{grid-area:body}
+  .margin{grid-area:side;justify-self:end;width:min(100%,19rem);position:sticky;top:24px;align-self:start;margin-top:2.2rem}
+  .contents.wide{display:block}.contents.narrow{display:none}
+}
+
+.prose{max-width:var(--measure);min-width:0}
+/* the in-text scheme (scripts/images.mjs): a white sheet with its own frame, so it reads on the night page too */
+.scheme{margin:1.6rem 0;max-width:var(--measure)}
+.scheme img{display:block;width:100%;max-width:100%;height:auto}
+.prose p,.prose li{hyphens:auto;text-wrap:pretty}
+.prose ul,.prose ol{padding-left:1.3rem}
+.prose li{margin:.35rem 0}
+.prose li::marker{color:var(--ink-2);font-family:var(--cat);font-weight:700;font-variant-numeric:tabular-nums}
+.prose blockquote{margin:1.4rem 0;padding:.7rem 1rem;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong);font-style:italic}
+.prose strong{font-weight:700}
+.prose code{font:500 .9em/1 ui-monospace,"SF Mono",Menlo,Consolas,monospace;background:var(--dept-tint);padding:.1em .3em}
+.prose hr{border:0;border-top:3px solid var(--rule-strong);margin:2.4rem 0}
+
+/* tables: the catalogue spec chart — flooded head, tinted every other row, figures in line */
+.table-wrap{overflow-x:auto;margin:1.6rem 0;-webkit-overflow-scrolling:touch;max-width:100%}
+table{border-collapse:collapse;width:100%;font:450 .9375rem/1.45 var(--cat);border-bottom:3px solid var(--rule-strong);font-variant-numeric:lining-nums tabular-nums}
+th,td{text-align:left;vertical-align:top;padding:9px 14px;border-bottom:1px solid var(--rule)}
+th{font-weight:750;background:var(--dept);color:var(--on-dept);border-bottom:0}
+tbody tr:nth-child(even) td{background:var(--dept-tint)}
+tr:last-child td{border-bottom:0}
+
+.button{display:inline-flex;align-items:center;min-height:46px;padding:0 20px;margin:4px 16px 4px 0;background:var(--dept);color:var(--on-dept);font:750 1rem/1 var(--cat);text-decoration:none;border-radius:6px;white-space:nowrap}
+.button:visited{color:var(--on-dept)}
+.button:hover{background:var(--dept-deep)}
+
+/* questions: a drawn plus that turns to a minus */
+.faq details{border-bottom:1px solid var(--rule);max-width:var(--measure)}
+.faq summary{list-style:none;cursor:pointer;display:flex;gap:14px;align-items:center;min-height:52px;padding:8px 0;font:700 1.0625rem/1.35 var(--cat)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"";flex:none;width:13px;height:13px;background:linear-gradient(var(--ink),var(--ink)) center/13px 2.5px no-repeat,linear-gradient(var(--ink),var(--ink)) center/2.5px 13px no-repeat;transition:transform .22s cubic-bezier(.2,.8,.2,1)}
+.faq details[open] summary::before{transform:rotate(90deg);background:linear-gradient(var(--ink),var(--ink)) center/13px 2.5px no-repeat}
+.faq details p{margin:0 0 16px 27px}
+.sources ol{font-size:.9375rem;line-height:1.5;padding-left:1.4rem;max-width:var(--measure)}
+.sources li{margin:.45rem 0}
+.sources li::marker{font:700 .875rem var(--cat);font-variant-numeric:tabular-nums;color:var(--ink-2)}
+.how{max-width:var(--measure);margin-top:2.4rem}
+
+/* ---------- catalogue entries: ruled lists, never cards ---------- */
+.entries{list-style:none;margin:0;padding:0;border-top:3px solid var(--rule-strong);max-width:var(--measure)}
+.entries li{display:grid;gap:4px;align-content:start;padding:15px 0 17px;border-bottom:1px solid var(--rule);break-inside:avoid}
+.entries a{text-decoration:none;color:var(--ink);display:block}
+.entry-title{display:block;font:740 var(--t-sub)/1.28 var(--cat);letter-spacing:-.006em}
+.entries a:hover .entry-title{color:var(--dept-text);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.18em}
+.entry-desc{display:block;color:var(--ink-2);font-size:.9688rem;line-height:1.5;margin-top:5px}
+.entries time{font:600 .8125rem/1.2 var(--cat);color:var(--ink-2);font-variant-numeric:lining-nums tabular-nums}
+h2+.entries,h2+.entries.columns{border-top:0}
+.empty{color:var(--ink-2);max-width:var(--measure);margin:1rem 0}
+
+/* hub: the start entry larger, the rest in two hard columns on wide screens */
+.hub .start .entry-title{font-size:var(--t-title);font-weight:820;letter-spacing:-.02em;line-height:1.08}
+.hub .start{margin-top:2.2rem}
+.hub .entries,.hub h2{max-width:none}
+.hub .entry-desc{max-width:var(--measure)}
+@media (min-width:1000px){
+  .entries.columns{max-width:none;columns:2;column-gap:56px;column-rule:1px solid var(--rule);border-top:0}
+  .entries.columns li{border-top:0}
+  .hub section:has(.columns) h2{max-width:none}
+}
+
+/* home: the index to departments — the department's name on its own ink, its entries beside it */
+.index-head{max-width:none;margin-top:1.6em}
+.dept{display:grid;gap:12px;padding:18px 0 26px;border-bottom:1px solid var(--rule)}
+.dept h3{margin:0}
+.dept h3 a{display:inline-block;background:var(--dept);color:#fff;text-decoration:none;font:800 1.25rem/1.15 var(--cat);letter-spacing:-.01em;padding:10px 14px 11px;border-radius:6px 6px 0 0;min-width:min(100%,15rem)}
+.dept h3 a:hover{background:var(--dept-deep)}
+.dept .entries{border-top-width:1px}
+.more{margin:.7rem 0 0;font:650 .9375rem/1.4 var(--cat)}
+@media (min-width:900px){
+  .dept{grid-template-columns:17rem minmax(0,1fr);gap:40px;align-items:start}
+  .dept h3 a{display:block;min-width:0}
+  .dept .entries{max-width:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px;border-top:0}
+  .dept .entries li:nth-child(-n+2){padding-top:0}
+  .dept .empty{margin:6px 0}
+}
+
+footer.site{border-top:6px solid var(--rule-strong);background:var(--sheet-white);font:500 .9375rem/1.55 var(--cat);color:var(--ink-2)}
+footer.site .bar{max-width:var(--page);margin:0 auto;padding:22px var(--gap) 30px}
+footer.site p{margin:.35rem 0;max-width:var(--measure)}
+footer.site a{color:var(--ink)}
+footer.site .small{color:var(--ink-2)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{header.site .tabs,header.site .top,.button,footer.site,.margin,.theme{display:none}header.site{background:none;color:#000}.running h1,.running-name,.running-name a{color:#000}body{background:#fff;color:#000}}
+/* language row (shown only when a second language is live): the language being read is not a link */
+.langs{display:flex;gap:2px 14px;font:600 var(--t-label)/1 var(--cat)}
+.langs a{text-decoration:none;padding:14px 2px}
+.langs a:hover{text-decoration:underline}
+.langs span[aria-current]{padding:12px 2px;border-bottom:2px solid var(--on-dept)}
+@media (max-width:719px){.top{flex-wrap:wrap}.langs{order:5;flex-basis:100%;padding-bottom:4px}}
+/* long German and Spanish words break at syllables instead of running off a phone screen */
+:lang(de) h1,:lang(de) h2,:lang(de) h3,:lang(de) .running-name,:lang(de) .entry-title,:lang(de) .tabs a,:lang(es) h1,:lang(es) h2,:lang(es) .running-name{hyphens:auto;-webkit-hyphens:auto}
+:lang(de) .prose,:lang(de) td,:lang(es) .prose,:lang(es) td{hyphens:auto;-webkit-hyphens:auto;overflow-wrap:break-word}
+/* dates run longer outside English ("30 de octubre de 2026"): let them wrap in the title block */
+html:not([lang=en]) .spec dd{white-space:normal}
+/* «Add this table to your site» (scripts/embed.mjs, config/embed.json) */
+.embed{margin:-.6rem 0 1.6rem;max-width:var(--measure)}
+.embed summary{cursor:pointer;font:650 var(--t-label)/1.4 var(--cat);color:var(--ink-2);padding:12px 0;min-height:44px;box-sizing:border-box}
+.embed summary:hover{color:var(--ink)}
+.embed label{display:block;margin:8px 0 6px}
+.embed-code{display:block;width:100%;box-sizing:border-box;font:400 .8125rem/1.45 ui-monospace,"SF Mono",Menlo,Consolas,monospace;color:var(--ink);background:var(--sheet-white);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;resize:vertical}
+.embed-code:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+
+/* calculator (tool pages, config/tools.json, scripts/tools.mjs): an order form in the
+   catalogue — ruled box, flooded head rule, fields in the reading face. The form stays
+   hidden without its script; the chart below it answers alone. */
+.calc{max-width:var(--measure);margin:1.6rem 0;padding:14px 18px 18px;background:var(--sheet-white);border:1px solid var(--rule);border-top:6px solid var(--dept)}
+.calc[hidden]{display:none}
+.prose .calc-title{font:750 1.0625rem/1.25 var(--cat);margin:0 0 12px;padding:0;border:0;max-width:none}
+.calc fieldset{border:0;margin:0 0 4px;padding:0;min-width:0}
+.calc legend,.calc-row label{display:block;font:650 var(--t-label)/1.3 var(--cat);color:var(--ink-2);margin:0 0 6px;padding:0}
+.calc-modes label{display:flex;align-items:center;gap:10px;min-height:44px;margin:0;font:400 1rem/1.35 var(--read);color:var(--ink);cursor:pointer}
+.calc-modes input{flex:none;width:20px;height:20px;margin:0}
+.calc-row{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:end;margin:10px 0 0}
+.calc-row[hidden]{display:none}
+.calc input[type=text],.calc select{display:block;min-height:44px;width:9rem;max-width:100%;padding:8px 10px;font:400 1rem/1.2 var(--read);font-variant-numeric:lining-nums tabular-nums;color:var(--ink);background:var(--stock);border:1px solid var(--ink);border-radius:0}
+.calc select#calc-paper{width:auto;min-width:9rem}
+.calc input[aria-invalid=true]{border-width:2px;border-color:var(--dept-text)}
+.calc input:focus-visible,.calc select:focus-visible,.calc .button:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+.calc .button{margin:16px 0 0;cursor:pointer;border:0}
+.calc-result{margin-top:16px;padding-top:12px;border-top:1px solid var(--rule)}
+.calc-result:empty{margin:0;padding:0;border:0}
+.calc-result p{margin:.35rem 0}
+.calc-result .calc-answer{font:750 1.375rem/1.25 var(--cat);font-variant-numeric:lining-nums tabular-nums}
+.calc-result .calc-error{font-weight:700}
+.calc-chart h3{max-width:var(--measure)}
+.calc-chart tbody th{background:none;color:var(--ink);font-weight:750;border-bottom:1px solid var(--rule)}
+.calc-chart tbody tr:nth-child(even) th{background:var(--dept-tint)}
+.calc-chart tbody tr:last-child th{border-bottom:0}
+.calc-chart td[data-dpi]{white-space:nowrap}
+.table-wrap:focus-visible{outline:2px solid var(--dept-text);outline-offset:2px}
+@media (max-width:480px){.calc-chart table[data-chart] th,.calc-chart table[data-chart] td{padding:7px 6px}.calc-chart table[data-chart]{font-size:.875rem}}
+/* layout v2 (config/site.json → layout_v2, 11.11.2026): home intro, the main guide first and wide
+   on the home index, and the product box — what it is, where it is bought, one button */
+.index-intro{max-width:var(--measure);margin:-.1rem 0 1.1rem;font:500 1rem/1.5 var(--cat);color:var(--ink-2)}
+@media (min-width:900px){
+  .dept .entries li.pillar{grid-column:1/-1}
+  .dept .entries li.pillar .entry-desc{max-width:var(--measure)}
+  .dept .entries li.pillar+li{padding-top:15px}
+}
+.panel.product{margin:2rem 0}
+.product .panel-body{padding:12px 0 16px}
+.product .product-title{font:780 1.25rem/1.25 var(--cat);margin:0 0 .35rem;hyphens:none}
+.product .product-what{margin:0 0 .5rem}
+.product .product-why{margin:0 0 .75rem}
+.product .product-where{margin:0 0 .5rem}
+.product .product-list .product-note{margin:-6px 0 11px}
+.product .product-act{margin:.75rem 0 0}
+.product .product-act .button{margin:0}
+.product .product-more{margin:1rem 0 0}
+.product .product-list{list-style:none;margin:0;padding:0}
+.product .product-list li{margin:0;border-bottom:1px solid var(--rule)}
+.product .product-list li:last-child{border-bottom:0}
+.product .product-list a{display:block;padding:11px 0;font:600 1rem/1.35 var(--cat)}
+/* tap targets on phones (WCAG 2.5.5 / Apple HIG 44×44; config/devices.json → tap_target_min, 11.11.2026):
+   the header links get a 44px box; crumbs, footer and spec links get a bigger hit area through
+   padding cancelled by a negative margin, so nothing moves on the page */
+.brand,.about,.langs a{display:inline-flex;align-items:center;min-height:44px;padding-top:0;padding-bottom:0}
+.crumbs a,footer.site a,.spec a,.more a{display:inline-block;min-width:44px;text-align:center;padding:13px 6px;margin:-13px -6px}
+.contents.narrow a{padding:12px 0}
+/* the day/night switch stays hidden until its script runs (JavaScript off: the page follows the system) */
+.theme[hidden]{display:none}
+/* the paper menu keeps its 44px height on iPhone: Safari ignores min-height on a native select,
+   so the select draws its own chevron in the ink colour (11.11.2026, phone check of tap targets) */
+.calc select{-webkit-appearance:none;appearance:none;padding-right:34px;background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 19px) 55%,calc(100% - 13px) 55%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+/* a long paper name (Spanish "Foto 10 × 15 cm (4 × 6 in)") never pushes the menu past a 280px screen or 200% text */
+.calc-row>*{min-width:0;max-width:100%}
+/* the band's top row wraps instead of running off the side when the words are long or the text is enlarged
+   (Spanish at 200% text on a 1280px laptop, 11.11.2026); at normal sizes it stays one row */
+.top{flex-wrap:wrap}
+/* the contents rail keeps at least 12rem: with text enlarged to 200% on a laptop the reading column
+   shrinks instead of squeezing the rail to nothing and pushing it past the edge (WebKit, Spanish, 11.11.2026) */
+@media (min-width:1100px){.layout{grid-template-columns:minmax(0,var(--measure)) minmax(12rem,1fr)}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://printables.clovermoor.com/#website","url":"https://printables.clovermoor.com/","name":"Clovermoor Printables","inLanguage":"en","publisher":{"@id":"https://printables.clovermoor.com/#org"}},{"@type":"Organization","@id":"https://printables.clovermoor.com/#org","name":"Clovermoor Printables","url":"https://printables.clovermoor.com/"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://printables.clovermoor.com/"},{"@type":"ListItem","position":2,"name":"Games & Puzzles","item":"https://printables.clovermoor.com/games-puzzles/"},{"@type":"ListItem","position":3,"name":"Christmas Bingo: Rules, Word List and Card Sizes"}]},{"@type":"BlogPosting","@id":"https://printables.clovermoor.com/games-puzzles/christmas-bingo/#article","headline":"Christmas Bingo: Rules, Word List and Card Sizes","description":"How to play Christmas bingo: cards of 3x3 to 5x5 pictures or words, a caller, and five in a row to win. Includes a 60-word call list and the card math.","inLanguage":"en","url":"https://printables.clovermoor.com/games-puzzles/christmas-bingo/","mainEntityOfPage":"https://printables.clovermoor.com/games-puzzles/christmas-bingo/","datePublished":"2026-11-20","dateModified":"2026-11-20","wordCount":1089,"author":{"@id":"https://printables.clovermoor.com/#org"},"publisher":{"@id":"https://printables.clovermoor.com/#org"},"image":"https://printables.clovermoor.com/img/generated/en/christmas-bingo-cover.jpg","articleSection":"Games & Puzzles","citation":["https://en.wikipedia.org/wiki/Bingo_(American_version)","https://www.mondaymandala.com/christmas-bingo/","https://www.101planners.com/christmas-bingo/"]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do you play Christmas bingo?","acceptedAnswer":{"@type":"Answer","text":"Give each player a different card with Christmas words or pictures. The caller draws one word at a time from a hat and reads it out, and players cover matching squares. The first player with a full row, column or diagonal shouts bingo; the caller checks the card against the drawn slips."}},{"@type":"Question","name":"How many words do you need for Christmas bingo?","acceptedAnswer":{"@type":"Answer","text":"More than the card has squares, or every card carries the same words. We suggest about twice the squares: 18 words for 3x3 cards, 32 for 4x4 and around 48 to 60 for 5x5 cards with a free middle square."}},{"@type":"Question","name":"What words go on a Christmas bingo card?","acceptedAnswer":{"@type":"Answer","text":"Things everyone recognises: Santa, reindeer, sleigh, snowman, stocking, candy cane, gingerbread man, wreath, mistletoe, ornament, star, bell, present, elf, chimney, cookies, hot chocolate, mittens, snowflake, and so on. Our 60-word list below is ready to use."}},{"@type":"Question","name":"What can you use as bingo markers?","acceptedAnswer":{"@type":"Answer","text":"Anything small and flat: buttons, coins, paper circles, or sweets such as chocolate buttons. 101 Planners also suggests candy, marshmallows or dry-erase markers on laminated cards."}},{"@type":"Question","name":"What prizes are good for Christmas bingo?","acceptedAnswer":{"@type":"Answer","text":"Small, cheap and wrapped: a chocolate bar, a candy cane, a mug, hand warmers, a festive pair of socks, or a printable coupon such as 'skip the washing-up'. Plan one prize per round plus a slightly bigger one for the final blackout."}}]}]}</script>
+</head>
+<body data-dept="4" data-layout="v2">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site"><div class="band">
+<div class="top"><a class="brand" href="/">Clovermoor Printables</a><a class="about" href="/about/">About</a><nav class="langs" aria-label="Language"><span lang="en" aria-current="true">English</span><a href="/es/" hreflang="es" lang="es" data-goatcounter-click="lang-es">Español</a><a href="/de/" hreflang="de" lang="de" data-goatcounter-click="lang-de">Deutsch</a></nav><button class="theme" type="button" hidden aria-label="Night pages" aria-pressed="false"><span class="theme-day">Day</span><span class="theme-night">Night</span></button></div>
+<div class="running"><p class="running-name"><a href="/games-puzzles/">Games &amp; Puzzles</a></p></div>
+<nav class="tabs" aria-label="Departments"><div class="tabs-row"><a href="/wall-art-prints/">Wall Art &amp; Prints</a><a href="/coloring-activity-pages/">Coloring &amp; Activity Pages</a><a href="/kids-learning/">Kids Learning</a><a href="/games-puzzles/" aria-current="page">Games &amp; Puzzles</a><a href="/party-celebrations/">Party &amp; Celebrations</a><a href="/cards-stationery/">Cards &amp; Stationery</a><a href="/planners-journals-calendars/">Planners, Journals &amp; Calendars</a><a href="/clipart-design-assets/">Clipart &amp; Design Assets</a><a href="/phone-screen-backgrounds/">Phone &amp; Screen Backgrounds</a></div><details class="tabs-phone"><summary>All departments <span class="count">9</span></summary><div class="tabs-list"><a href="/wall-art-prints/">Wall Art &amp; Prints</a><a href="/coloring-activity-pages/">Coloring &amp; Activity Pages</a><a href="/kids-learning/">Kids Learning</a><a href="/games-puzzles/" aria-current="page">Games &amp; Puzzles</a><a href="/party-celebrations/">Party &amp; Celebrations</a><a href="/cards-stationery/">Cards &amp; Stationery</a><a href="/planners-journals-calendars/">Planners, Journals &amp; Calendars</a><a href="/clipart-design-assets/">Clipart &amp; Design Assets</a><a href="/phone-screen-backgrounds/">Phone &amp; Screen Backgrounds</a></div></details></nav></div></header>
+<script>(function(){var b=document.querySelector(".theme");if(!b)return;var r=document.documentElement,m=matchMedia("(prefers-color-scheme: dark)");function cur(){return r.dataset.theme||(m.matches?"dark":"light")}function show(){b.setAttribute("aria-pressed",cur()==="dark"?"true":"false")}b.hidden=false;show();m.addEventListener&&m.addEventListener("change",show);b.addEventListener("click",function(){var t=cur()==="dark"?"light":"dark";r.dataset.theme=t;try{localStorage.setItem("theme",t)}catch(e){}show()})})();</script>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> <span aria-hidden="true">›</span> <a href="/games-puzzles/">Games &amp; Puzzles</a> <span aria-hidden="true">›</span> <span aria-current="page">Christmas Bingo: Rules, Word List and Card Sizes</span></nav>
+<main id="main"><article class="sheet article"><div class="layout">
+<header><h1>Christmas Bingo: Rules, Word List and Card Sizes</h1>
+<dl class="spec">
+<div><dt>Published</dt><dd><time datetime="2026-11-20">20 November 2026</time></dd></div>
+<div><dt>Checked</dt><dd><time datetime="2026-11-20">20 November 2026</time></dd></div>
+<div><dt>Reading</dt><dd>5 min</dd></div>
+<div><dt>Sources</dt><dd><a href="#sources">3 named</a></dd></div>
+</dl></header>
+<div class="margin"><nav class="contents wide" aria-labelledby="contents-h"><h2 id="contents-h">In this article</h2><ol><li><a href="#how-to-play-christmas-bingo">How to play Christmas bingo</a></li><li><a href="#card-sizes-3x3-4x4-and-5x5">Card sizes: 3x3, 4x4 and 5x5</a></li><li><a href="#how-many-words-the-call-list-needs">How many words the call list needs</a></li><li><a href="#a-60-word-christmas-bingo-call-list">A 60-word Christmas bingo call list</a></li><li><a href="#winning-patterns-for-more-rounds">Winning patterns for more rounds</a></li><li><a href="#two-winners-on-the-same-call">Two winners on the same call</a></li><li><a href="#christmas-bingo-for-big-groups-classrooms-and-adults">Christmas bingo for big groups, classrooms and adults</a></li></ol></nav><details class="contents narrow"><summary>In this article <span class="count">7 sections</span></summary><ol><li><a href="#how-to-play-christmas-bingo">How to play Christmas bingo</a></li><li><a href="#card-sizes-3x3-4x4-and-5x5">Card sizes: 3x3, 4x4 and 5x5</a></li><li><a href="#how-many-words-the-call-list-needs">How many words the call list needs</a></li><li><a href="#a-60-word-christmas-bingo-call-list">A 60-word Christmas bingo call list</a></li><li><a href="#winning-patterns-for-more-rounds">Winning patterns for more rounds</a></li><li><a href="#two-winners-on-the-same-call">Two winners on the same call</a></li><li><a href="#christmas-bingo-for-big-groups-classrooms-and-adults">Christmas bingo for big groups, classrooms and adults</a></li></ol></details></div>
+<div class="column"><section class="panel short" aria-labelledby="short-h"><h2 id="short-h" class="panel-head">In short</h2><ul class="panel-body"><li>Each player gets a different card; the caller draws words at random and players mark them; the first full line wins.</li><li>Use 3x3 or 4x4 cards for small children and 5x5 for older players and adults.</li><li>The call list needs many more words than the card has squares, or every card ends up holding the same words.</li><li>Below is a 60-word Christmas call list you can copy, cut into slips and draw from a hat.</li><li>Decide before the first round what happens when two players shout bingo on the same call.</li></ul></section><div class="prose"><p>Christmas bingo is ordinary bingo with holiday words or pictures in place of numbers. Every player gets a different card, a caller draws words one by one, players cover the matching squares, and the first to complete a row, column or diagonal shouts &quot;bingo&quot;. It works for a table of four or a room of forty, because each person only needs a card and some markers.</p>
+<aside class="panel shop product" aria-labelledby="products-h-1"><h2 id="products-h-1" class="panel-head">From our Etsy shops</h2>
+<div class="panel-body"><p class="product-title">One Day, You’ll Miss This — a memory-making guide for the dog still beside you</p>
+<p class="product-what">A printable memory book for people with a dog: 50 activities, with memory pages to print. It comes as a print edition, a phone edition and an EPUB.</p><p class="small product-where">You buy and download it on Etsy.</p>
+<p class="product-act"><a class="button" href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" data-goatcounter-click="listing-pinehold">See it on Etsy</a></p>
+<p class="small product-more">More from our shops</p><ul class="product-list"><li><a href="https://www.etsy.com/listing/4591734891" rel="noopener" data-goatcounter-click="listing-pinehold">The House Your Cat Knows — a printable and digital archive for the life your cat shares with you</a><p class="small product-note">Printable book for people with a cat</p></li></ul></div>
+</aside>
+<h2 id="how-to-play-christmas-bingo">How to play Christmas bingo</h2>
+<ol>
+<li>Give each player one card and a handful of markers.</li>
+<li>The caller mixes the call slips in a hat or bowl.</li>
+<li>The caller draws one slip, reads the word aloud and puts the slip aside. Do not put it back.</li>
+<li>Players with that word on their card cover it.</li>
+<li>The first player with a full line shouts &quot;bingo&quot;.</li>
+<li>The caller checks the winner&#39;s covered squares against the slips already drawn. If they match, that player wins the round. If not, play goes on.</li>
+</ol>
+<p>Monday Mandala asks the caller to keep a slow pace so everyone finds their squares. With young children, show the picture as well as saying the word. 101 Planners suggests checking the card against the calls before declaring a winner, which is why the drawn slips go on a separate pile.</p>
+<figure class="scheme"><picture><source type="image/webp" srcset="/img/generated/en/christmas-bingo-scheme.webp"><img src="/img/generated/en/christmas-bingo-scheme.png" alt="In short: Each player gets a different card; the caller draws words at random and players mark them; the first full line wins. Use 3x3 or 4x4 cards for small children and 5x5 for older players and adults. The call list needs many more words than the card has squares, or every card ends up holding the same words. Below is a 60-word Christmas call list you can copy, cut into slips and draw from a hat. Decide before the first round what happens when two players shout bingo on the same call." width="520" height="587" loading="lazy" decoding="async"></picture></figure>
+<h2 id="card-sizes-3x3-4x4-and-5x5">Card sizes: 3x3, 4x4 and 5x5</h2>
+<p>Both printable pages we read offer three grid sizes. The bigger the grid, the longer each round.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Card</th>
+<th>Squares</th>
+<th>Free square</th>
+<th>Line to win</th>
+<th>Good for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>3x3</td>
+<td>9</td>
+<td>Optional, in the middle</td>
+<td>3 in a row</td>
+<td>Toddlers and preschoolers</td>
+</tr>
+<tr>
+<td>4x4</td>
+<td>16</td>
+<td>None (an even grid has no middle square)</td>
+<td>4 in a row</td>
+<td>Early readers</td>
+</tr>
+<tr>
+<td>5x5</td>
+<td>25</td>
+<td>Middle square</td>
+<td>5 in a row</td>
+<td>Older children and adults</td>
+</tr>
+</tbody></table>
+</div><p>The 5x5 layout comes from number bingo. Wikipedia describes the standard American card as five columns and five rows under the letters B-I-N-G-O, with a free space in the centre and the numbers 1 to 75 split across the columns. A Christmas card keeps the grid and the free middle square and swaps the numbers for words.</p>
+<h2 id="how-many-words-the-call-list-needs">How many words the call list needs</h2>
+<p>This is the part printable pages tend to skip, and it decides whether the game works.</p>
+<p>If your call list has exactly as many words as the card has squares, every card holds the same words in a different order. In a blackout round (cover the whole card) everyone finishes on the same call. Even in a line round, too many people win at once.</p>
+<p>So the list has to be longer than the card. Our rule of thumb is about twice the squares:</p>
+<ul>
+<li>3x3 cards: around 18 words</li>
+<li>4x4 cards: around 32 words</li>
+<li>5x5 cards with a free middle: around 48 to 60 words</li>
+</ul>
+<p>A longer list means longer rounds, since more of the calls hit nobody&#39;s card. A shorter list means faster rounds and more ties. For a group of very young children, a short list and a 3x3 card is the right trade.</p>
+<h2 id="a-60-word-christmas-bingo-call-list">A 60-word Christmas bingo call list</h2>
+<p>All of these are easy to picture, so the same list works for word cards and picture cards. Copy it, print it, cut it into slips.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Santa</td>
+<td>Reindeer</td>
+<td>Sleigh</td>
+<td>Elf</td>
+</tr>
+<tr>
+<td>Snowman</td>
+<td>Snowflake</td>
+<td>Snowball</td>
+<td>Sledge</td>
+</tr>
+<tr>
+<td>Christmas tree</td>
+<td>Star</td>
+<td>Angel</td>
+<td>Ornament</td>
+</tr>
+<tr>
+<td>Tinsel</td>
+<td>Lights</td>
+<td>Wreath</td>
+<td>Mistletoe</td>
+</tr>
+<tr>
+<td>Holly</td>
+<td>Candle</td>
+<td>Bell</td>
+<td>Stocking</td>
+</tr>
+<tr>
+<td>Chimney</td>
+<td>Fireplace</td>
+<td>Present</td>
+<td>Bow</td>
+</tr>
+<tr>
+<td>Wrapping paper</td>
+<td>Gift tag</td>
+<td>Candy cane</td>
+<td>Gingerbread man</td>
+</tr>
+<tr>
+<td>Cookies</td>
+<td>Milk</td>
+<td>Hot chocolate</td>
+<td>Marshmallow</td>
+</tr>
+<tr>
+<td>Mince pie</td>
+<td>Christmas pudding</td>
+<td>Turkey</td>
+<td>Nutcracker</td>
+</tr>
+<tr>
+<td>Toy soldier</td>
+<td>Teddy bear</td>
+<td>Drum</td>
+<td>Train</td>
+</tr>
+<tr>
+<td>Mittens</td>
+<td>Scarf</td>
+<td>Woolly hat</td>
+<td>Ice skates</td>
+</tr>
+<tr>
+<td>Penguin</td>
+<td>Polar bear</td>
+<td>Robin</td>
+<td>Pine cone</td>
+</tr>
+<tr>
+<td>Advent calendar</td>
+<td>Christmas card</td>
+<td>Cracker</td>
+<td>Carol singers</td>
+</tr>
+<tr>
+<td>Letter to Santa</td>
+<td>North Pole</td>
+<td>Sack of toys</td>
+<td>Snow globe</td>
+</tr>
+<tr>
+<td>Poinsettia</td>
+<td>Gingerbread house</td>
+<td>Jingle bells</td>
+<td>Rudolph</td>
+</tr>
+<tr>
+<td>Ugly sweater</td>
+<td>Pajamas</td>
+<td>Candy</td>
+<td>Workshop</td>
+</tr>
+</tbody></table>
+</div><details class="embed">
+<summary>Add this table to your site</summary>
+<p class="small">Free to use on your site, blog or newsletter. Copy the code below and paste it into your page as HTML. It shows the same table with a link back to this page as the source.</p>
+<label class="small" for="embed-t1">HTML code</label>
+<textarea id="embed-t1" class="embed-code" readonly rows="6" spellcheck="false">&lt;figure style=&quot;margin:1.5em 0;max-width:640px&quot;&gt;
+&lt;figcaption style=&quot;font-weight:bold;margin:0 0 .5em&quot;&gt;A 60-word Christmas bingo call list&lt;/figcaption&gt;
+&lt;table style=&quot;border-collapse:collapse;width:100%;font-size:15px&quot;&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;&lt;/th&gt;
+&lt;th style=&quot;border:1px solid #bbb;padding:6px 8px;text-align:left;background:#f3f3f3;color:#222&quot;&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Santa&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Reindeer&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sleigh&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Elf&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Snowman&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Snowflake&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Snowball&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sledge&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Christmas tree&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Star&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Angel&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Ornament&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Tinsel&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Lights&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Wreath&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Mistletoe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Holly&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Candle&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Bell&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Stocking&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Chimney&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Fireplace&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Present&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Bow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Wrapping paper&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Gift tag&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Candy cane&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Gingerbread man&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Cookies&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Milk&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Hot chocolate&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Marshmallow&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Mince pie&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Christmas pudding&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Turkey&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Nutcracker&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Toy soldier&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Teddy bear&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Drum&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Train&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Mittens&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Scarf&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Woolly hat&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Ice skates&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Penguin&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Polar bear&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Robin&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Pine cone&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Advent calendar&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Christmas card&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Cracker&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Carol singers&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Letter to Santa&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;North Pole&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Sack of toys&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Snow globe&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Poinsettia&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Gingerbread house&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Jingle bells&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Rudolph&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Ugly sweater&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Pajamas&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Candy&lt;/td&gt;
+&lt;td style=&quot;border:1px solid #bbb;padding:6px 8px&quot;&gt;Workshop&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+&lt;p style=&quot;font-size:13px;margin:.5em 0 0&quot;&gt;Source: &lt;a href=&quot;https://printables.clovermoor.com/games-puzzles/christmas-bingo/&quot; style=&quot;color:inherit;text-decoration:underline&quot;&gt;Clovermoor Printables&lt;/a&gt;. The full guide is on that page.&lt;/p&gt;
+&lt;/figure&gt;</textarea>
+<p><button type="button" class="button embed-copy" data-for="embed-t1" data-done="Copied" hidden>Copy code</button></p>
+</details><p>To make your own cards from this list, pick 24 different words at random for each 5x5 card and write &quot;FREE&quot; in the middle. For 4x4, pick 16; for 3x3, pick 9 (or 8 plus a free middle). Shuffle the slips before each card so no two come out the same.</p>
+<h2 id="winning-patterns-for-more-rounds">Winning patterns for more rounds</h2>
+<p>A straight line is the default. Wikipedia names a few other patterns from number bingo that carry over well:</p>
+<ul>
+<li>Four corners: cover only the four corner squares. Quick, good for little ones.</li>
+<li>Postage stamp: a 2x2 block in any corner.</li>
+<li>Blackout, also called coverall: every square on the card. Wikipedia notes church games often end on a coverall.</li>
+</ul>
+<p>101 Planners adds Christmas shapes such as a tree, a candy cane, a present and a wreath, drawn on a card of the same grid. Show the shape on a sample card before the round so nobody argues afterwards.</p>
+<p>A good evening runs two or three line rounds, one pattern round and a blackout to finish.</p>
+<h2 id="two-winners-on-the-same-call">Two winners on the same call</h2>
+<p>Neither of the printable pages says what to do here, so settle it before you start. Three fair options:</p>
+<ul>
+<li>Both win and both get a prize. The simplest, if you bought spares.</li>
+<li>Draw one more slip. The first of the two players to have that word on their card wins; if neither does, draw again.</li>
+<li>The tied players say a Christmas word in turn until one repeats or hesitates.</li>
+</ul>
+<p>Write your choice on the call sheet so the caller doesn&#39;t have to decide on the spot.</p>
+<h2 id="christmas-bingo-for-big-groups-classrooms-and-adults">Christmas bingo for big groups, classrooms and adults</h2>
+<p>For a group of more than 30, Monday Mandala suggests pairing guests or playing in teams, so you print fewer cards. Half-page cards (two per sheet) save paper too.</p>
+<p>In a classroom, 101 Planners recommends four cards per page and short rounds. For adults, try music bingo: the caller plays a few seconds of a carol and players cover the song title. Film bingo works the same way with stills or quotes.</p>
+<p>Card stock lasts longer than copy paper if cards are passed around, and laminated cards can be used again with a dry-erase marker, as both printable pages suggest.</p>
+<p>For the rest of the evening, our <a href="/games-puzzles/christmas-party-games/">Christmas party games</a> are sorted by crowd and prep time, <a href="/games-puzzles/christmas-charades/">Christmas charades</a> has 90 prompts in three levels, and the <a href="/games-puzzles/christmas-trivia-questions/">Christmas trivia questions</a> make a calmer round after the bingo prizes are handed out. If you are planning the whole night, start with our <a href="/party-celebrations/christmas-party-ideas/">Christmas party ideas</a>. More games for other occasions are in the <a href="/games-puzzles/">Games &amp; Puzzles</a> section, including <a href="/games-puzzles/baby-shower-games-ideas/">baby shower games ideas</a>.</p>
+<script>document.querySelectorAll(".embed-copy").forEach(function(b){var t=document.getElementById(b.getAttribute("data-for"));if(!t)return;b.hidden=false;var label=b.textContent;b.addEventListener("click",function(){function done(){b.textContent=b.getAttribute("data-done");setTimeout(function(){b.textContent=label},2500)}t.select();if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(done,function(){document.execCommand("copy");done()})}else{document.execCommand("copy");done()}})});</script></div><div data-read-end aria-hidden="true" style="height:1px"></div></div></div>
+<aside class="panel shop product" aria-labelledby="products-h-2"><h2 id="products-h-2" class="panel-head">From our Etsy shops</h2>
+<div class="panel-body"><p class="product-title">One Day, You’ll Miss This — a memory-making guide for the dog still beside you</p>
+<p class="product-what">A printable memory book for people with a dog: 50 activities, with memory pages to print. It comes as a print edition, a phone edition and an EPUB.</p><p class="small product-where">You buy and download it on Etsy.</p>
+<p class="product-act"><a class="button" href="https://www.etsy.com/listing/4584343261/one-day-youll-miss-this-dog-memory-book" rel="noopener" data-goatcounter-click="listing-pinehold">See it on Etsy</a></p>
+<p class="small product-more">More from our shops</p><ul class="product-list"><li><a href="https://www.etsy.com/listing/4591734891" rel="noopener" data-goatcounter-click="listing-pinehold">The House Your Cat Knows — a printable and digital archive for the life your cat shares with you</a><p class="small product-note">Printable book for people with a cat</p></li></ul></div>
+</aside>
+<section class="faq"><h2 id="questions">Questions people ask</h2><details><summary>How do you play Christmas bingo?</summary><p>Give each player a different card with Christmas words or pictures. The caller draws one word at a time from a hat and reads it out, and players cover matching squares. The first player with a full row, column or diagonal shouts bingo; the caller checks the card against the drawn slips.</p></details><details><summary>How many words do you need for Christmas bingo?</summary><p>More than the card has squares, or every card carries the same words. We suggest about twice the squares: 18 words for 3x3 cards, 32 for 4x4 and around 48 to 60 for 5x5 cards with a free middle square.</p></details><details><summary>What words go on a Christmas bingo card?</summary><p>Things everyone recognises: Santa, reindeer, sleigh, snowman, stocking, candy cane, gingerbread man, wreath, mistletoe, ornament, star, bell, present, elf, chimney, cookies, hot chocolate, mittens, snowflake, and so on. Our 60-word list below is ready to use.</p></details><details><summary>What can you use as bingo markers?</summary><p>Anything small and flat: buttons, coins, paper circles, or sweets such as chocolate buttons. 101 Planners also suggests candy, marshmallows or dry-erase markers on laminated cards.</p></details><details><summary>What prizes are good for Christmas bingo?</summary><p>Small, cheap and wrapped: a chocolate bar, a candy cane, a mug, hand warmers, a festive pair of socks, or a printable coupon such as 'skip the washing-up'. Plan one prize per round plus a slightly bigger one for the final blackout.</p></details></section>
+<section class="sources"><h2 id="sources">Sources</h2><ol><li><a href="https://en.wikipedia.org/wiki/Bingo_(American_version)" rel="noopener">Bingo (American version)</a>, Wikipedia</li><li><a href="https://www.mondaymandala.com/christmas-bingo/" rel="noopener">Christmas Bingo</a>, Monday Mandala</li><li><a href="https://www.101planners.com/christmas-bingo/" rel="noopener">Christmas Bingo</a>, 101 Planners</li></ol></section>
+<p class="small how">We write these articles with help from an AI model. Every fact is checked against the sources listed under each article; anything we could not confirm is left out. <a href="/about/">How we write these pages</a>.</p>
+<section class="related"><h2 id="read-next">Read next</h2><ul class="entries"><li><a href="/games-puzzles/baby-shower-games-ideas/"><span class="entry-title">Baby Shower Games Ideas for Small and Large Groups</span><span class="entry-desc">Baby shower games ideas sorted by group size: paper games like bingo and word scrambles for big groups, guessing and advice games for small ones. What to print.</span></a><time datetime="2026-11-05">5 November 2026</time></li><li><a href="/games-puzzles/christmas-trivia-questions/"><span class="entry-title">Christmas Trivia Questions With Checked Answers</span><span class="entry-desc">52 Christmas trivia questions with answers in five rounds: carols, films, Santa, traditions and food. Every answer checked against a reference page.</span></a><time datetime="2026-11-17">17 November 2026</time></li><li><a href="/games-puzzles/christmas-party-games/"><span class="entry-title">Christmas Party Games for Family, Adults and Work</span><span class="entry-desc">Christmas party games by crowd: pass the parcel and Pin the Nose on Rudolph for families, charades and trivia for adults, low-key printables for the office.</span></a><time datetime="2026-11-02">2 November 2026</time></li></ul><p class="more"><a href="/games-puzzles/">All 9 articles in Games &amp; Puzzles</a></p></section>
+</article></main>
+<footer class="site"><div class="bar">
+<p>Ideas and how-tos for printables and digital design files.</p>
+<p><a href="/about/">About these pages</a> · <a href="/feed.xml">Feed</a></p>
+<p class="small">We write these articles with help from an AI model. Every fact is checked against the sources listed under each article; anything we could not confirm is left out.</p>
+</div></footer>
+</body>
+</html>
